@@ -88,7 +88,7 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 
 
 ## Wireframes
-<  >https://github.com/jtmlock/MemeGenerator/blob/master/Meme%20Generator%20WireFrame.jpg<br>
+<img src="https://github.com/jtmlock/MemeGenerator/blob/master/Meme%20Generator%20WireFrame.jpg"><br>
 
 ### [BONUS] Digital Wireframes & Mockups
 <https://github.com/jtmlock/MemeGenerator/blob/master/Meme%20Generator%20Digital%20Wireframe.jpg>
