@@ -94,5 +94,5 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 <img src="https://github.com/jtmlock/MemeGenerator/blob/master/Meme%20Generator%20Digital%20Wireframe.jpg"><br>
 
 ### [BONUS] Interactive Prototype
-< >
+<img src="https://xd.adobe.com/view/96e14607-620d-4681-4604-c8b55d1dc7e6-e0d0/"><br>
 
