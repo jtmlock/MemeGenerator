@@ -207,3 +207,45 @@ Network Requests<br>
 -Generator<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Read/GET)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query images<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Create/POST)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new Meme<br>
+
+
+## OPTIONAL Heroku Endpoints
+
+HTTP VERB
+Link the new add-on to your Heroku user account
+POST https://hc-central.heroku.com/auth/<app_name_or_app_uuid>
+
+Import a mapping configuration
+POST /connections/<connection_id>/actions/import
+
+Monitor the connection and mapping status
+GET /connections/<connection_id>
+
+Pause the connection
+POST /connections/<connection_id>/actions/pause
+
+Once Paused, it can be Resumed
+POST /connections/<connection_id>/actions/resume
+
+Restart the connection
+POST /connections/<connection_id>/actions/restart
+
+Reload a mapping
+POST /mappings/<mapping_id>/actions/reload
+
+Get mapping details
+GET /mappings/<mapping_id>
+
+Create a new Mapping
+POST /connections/<connection_id>/mappings
+
+Edit existing mapping
+PUT /mappings/<mapping_id>
+
+Delete existing mapping
+DELETE /mappings/<mapping_id>
+
+
+
+
+
