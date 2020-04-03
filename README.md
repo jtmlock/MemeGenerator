@@ -100,48 +100,45 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 
 ##  Meme Generator - Schema Design
 <ol>
-<li>1. User</li>
-<li>2. Posts - Memes</li>
-<li>3. Comments</li>
-<li>4. Likes</li>
-<li>5. Follow</li>
-<li>6. Text</li>
+<li>User</li>
+<li>Posts - Memes</li>
+<li>Comments</li>
+<li>Likes</li>
+<li>Follow</li>
+<li>Text</li>
 </ol>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. User<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updated password At<br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Post - Meme<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Image<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caption<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment Count<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Likes Count<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdatedAt<br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Comment<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdatedAt<br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Likes<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt<br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Follow<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt<br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. Text<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt<br>
+<ol>
+<li>User</li>
+	<ul><li>objectId</li>
+	<li>createdAt</li>
+	<li>Updated password At</li></ul>
+<li>Post - Meme</li>
+	<ul><li>objectId</li>
+	<li>Author</li>
+	<li>Image</li>
+	<li>Caption</li>
+	<li>Comment Count</li>
+	<li>Likes Count</li>
+	<li>createdAt</li>
+	<li>UpdatedAt</li></ul>
+<li>Comment</li>
+	<ul><li>objectId</li>
+	<li>Author</li>
+	<li>createdAt</li>
+	<li>UpdatedAt</li></ul>
+<li>Likes</li>
+	<ul><li>objectId</li>
+	<li>Author</li>
+	<li>createdAt</li></ul>
+<li>Follow</li>
+	<ul><li>objectId</li>
+	<li>Author</li>
+	<li>createdAt</li></ul>
+<li>Text</li>
+	<ul><li>objectId</li>
+	<li>Author</li>
+	<li>createdAt</li></ul>
+</ol>
 
 ## Data Model 
 
