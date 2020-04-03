@@ -193,19 +193,19 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 Network Requests<br>
 -Login Screen<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<code>
-let query = PFQuery(className:"Post")<br>
-query.whereKey("author", equalTo: currentUser)<br>
-query.order(byDescending: "createdAt")<br>
-query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in<br>
-   if let error = error { <br>
-      print(error.localizedDescription)<br>
-   } else if let posts = posts {<br>
-      print("Successfully retrieved \(posts.count) posts.")<br>
-  // TODO: Do something with posts...<br>
-   }<br>
-}<br>
-  </code>
+
+<code>let query = PFQuery(className:"Post")</code><br>
+<code>query.whereKey("author", equalTo: currentUser)</code><br>
+<code>query.order(byDescending: "createdAt")</code><br>
+<code>query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in</code><br>
+   <code>if let error = error { </code><br>
+      <code>print(error.localizedDescription)</code><br>
+   <code>} else if let posts = posts {</code><br>
+      <code>print("Successfully retrieved \(posts.count) posts.")</code><br>
+  <code>// TODO: Do something with posts...</code><br>
+   <code>}</code><br>
+<code>}</code><br>
+
 (Read/GET)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query Login<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Create/POST)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create User Login<br>
 
