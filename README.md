@@ -275,15 +275,15 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 
 <table>
 <tr> <th>HTTP VERB</th> <th> </th> <th> </th> </tr>
-<tr> <td>POST</td><code> https://hc-central.heroku.com/auth/<app_name_or_app_uuid> </code> <td> Link the new add-on to your Heroku user account </td> </tr>
-<tr> <td>POST</td><code> /connections/<connection_id>/actions/import </code> <td> Import a mapping configuration <td> </tr>
-<tr> <td>GET</td><code> /connections/<connection_id>  </code> <td> Monitor the connection and mapping status </td> </tr>
-<tr> <td>POST</td><code> /connections/<connection_id>/actions/pause </code> <td> Pause the connection </td> </tr>
-<tr> <td>POST</td><code> /connections/<connection_id>/actions/resume </code> <td> Once Paused, it can be Resumed</td> </tr>
-<tr> <td>POST</td><code> /connections/<connection_id>/actions/restart </code> <td> Restart the connection </td> </tr>
-<tr> <td>POST</td><code> /mappings/<mapping_id>/actions/reload </code> <td> Reload a mapping </td> </tr>
-<tr> <td>GET</td><code> /mappings/<mapping_id> </code> <td> Get mapping details </td> </tr>
-<tr> <td>POST</td><code> /connections/<connection_id>/mappings </code> <td> Create a new Mapping </td> </tr>
-<tr> <td>PUT</td><code> /mappings/<mapping_id> </code> <td> Edit existing mapping </td> </tr>
-<tr> <td>DELETE</td><code>/mappings/<mapping_id> </code> <td> Delete existing mapping </td> </tr>
+<tr> <td>POST</td><code> https://hc-central.heroku.com/auth/<app_name_or_app_uuid> </code></td><td> Link the new add-on to your Heroku user account </td> </tr>
+<tr> <td>POST</td><td><code> /connections/<connection_id>/actions/import </code></td><td> Import a mapping configuration <td> </tr>
+<tr> <td>GET</td><td><code> /connections/<connection_id>  </code></td><td> Monitor the connection and mapping status </td> </tr>
+<tr> <td>POST</td><td><code> /connections/<connection_id>/actions/pause </code></td><td> Pause the connection </td> </tr>
+<tr> <td>POST</td><td><code> /connections/<connection_id>/actions/resume </code></td><td> Once Paused, it can be Resumed</td> </tr>
+<tr> <td>POST</td><td><code> /connections/<connection_id>/actions/restart </code></td><td> Restart the connection </td> </tr>
+<tr> <td>POST</td><td><code> /mappings/<mapping_id>/actions/reload </code></td><td> Reload a mapping </td> </tr>
+<tr> <td>GET</td><td><code> /mappings/<mapping_id> </code></td><td> Get mapping details </td> </tr>
+<tr> <td>POST</td><td><code> /connections/<connection_id>/mappings </code></td><td> Create a new Mapping </td> </tr>
+<tr> <td>PUT</td><td><code> /mappings/<mapping_id> </code></td><td> Edit existing mapping </td> </tr>
+<tr> <td>DELETE</td><td><code>/mappings/<mapping_id> </code></td><td> Delete existing mapping </td> </tr>
 </table>
