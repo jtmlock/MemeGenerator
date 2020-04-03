@@ -273,37 +273,17 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 
 ## OPTIONAL Heroku Endpoints
 
-HTTP VERB<br>
-Link the new add-on to your Heroku user account<br>
-POST https://hc-central.heroku.com/auth/<app_name_or_app_uuid><br>
-
-Import a mapping configuration<br>
-POST /connections/<connection_id>/actions/import<br>
-
-Monitor the connection and mapping status<br>
-GET /connections/<connection_id><br>
-
-Pause the connection<br>
-POST /connections/<connection_id>/actions/pause<br>
-
-Once Paused, it can be Resumed<br>
-POST /connections/<connection_id>/actions/resume<br>
-
-Restart the connection<br>
-POST /connections/<connection_id>/actions/restart<br>
-
-Reload a mapping<br>
-POST /mappings/<mapping_id>/actions/reload<br>
-
-Get mapping details<br>
-GET /mappings/<mapping_id><br>
-
-Create a new Mapping<br>
-POST /connections/<connection_id>/mappings<br>
-
-Edit existing mapping<br>
-PUT /mappings/<mapping_id><br>
-
-Delete existing mapping<br>
-DELETE /mappings/<mapping_id><br>
-
+<table>
+<tr> <th>HTTP VERB</th> <th> </th> <th> </th> </tr>
+<tr> <td>POST</td><code> https://hc-central.heroku.com/auth/<app_name_or_app_uuid> </code> <td> Link the new add-on to your Heroku user account </td> </tr>
+<tr> <td>POST</td><code> /connections/<connection_id>/actions/import </code> <td> Import a mapping configuration <td> </tr>
+<tr> <td>GET</td><code> /connections/<connection_id>  </code> <td> Monitor the connection and mapping status </td> </tr>
+<tr> <td>POST</td><code> /connections/<connection_id>/actions/pause </code> <td> Pause the connection </td> </tr>
+<tr> <td>POST</td><code> /connections/<connection_id>/actions/resume </code> <td> Once Paused, it can be Resumed</td> </tr>
+<tr> <td>POST</td><code> /connections/<connection_id>/actions/restart </code> <td> Restart the connection </td> </tr>
+<tr> <td>POST</td><code> /mappings/<mapping_id>/actions/reload </code> <td> Reload a mapping </td> </tr>
+<tr> <td>GET</td><code> /mappings/<mapping_id> </code> <td> Get mapping details </td> </tr>
+<tr> <td>POST</td><code> /connections/<connection_id>/mappings </code> <td> Create a new Mapping </td> </tr>
+<tr> <td>PUT</td><code> /mappings/<mapping_id> </code> <td> Edit existing mapping </td> </tr>
+<tr> <td>DELETE</td><code>/mappings/<mapping_id> </code> <td> Delete existing mapping </td> </tr>
+</table>
