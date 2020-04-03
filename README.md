@@ -211,41 +211,36 @@ Network Requests<br>
 
 ## OPTIONAL Heroku Endpoints
 
-HTTP VERB
-Link the new add-on to your Heroku user account
-POST https://hc-central.heroku.com/auth/<app_name_or_app_uuid>
+HTTP VERB<br>
+Link the new add-on to your Heroku user account<br>
+POST https://hc-central.heroku.com/auth/<app_name_or_app_uuid><br>
 
-Import a mapping configuration
-POST /connections/<connection_id>/actions/import
+Import a mapping configuration<br>
+POST /connections/<connection_id>/actions/import<br>
 
-Monitor the connection and mapping status
-GET /connections/<connection_id>
+Monitor the connection and mapping status<br>
+GET /connections/<connection_id><br>
 
-Pause the connection
-POST /connections/<connection_id>/actions/pause
+Pause the connection<br>
+POST /connections/<connection_id>/actions/pause<br>
 
-Once Paused, it can be Resumed
-POST /connections/<connection_id>/actions/resume
+Once Paused, it can be Resumed<br>
+POST /connections/<connection_id>/actions/resume<br>
 
-Restart the connection
-POST /connections/<connection_id>/actions/restart
+Restart the connection<br>
+POST /connections/<connection_id>/actions/restart<br>
 
-Reload a mapping
-POST /mappings/<mapping_id>/actions/reload
+Reload a mapping<br>
+POST /mappings/<mapping_id>/actions/reload<br>
 
-Get mapping details
-GET /mappings/<mapping_id>
+Get mapping details<br>
+GET /mappings/<mapping_id><br>
 
-Create a new Mapping
-POST /connections/<connection_id>/mappings
+Create a new Mapping<br>
+POST /connections/<connection_id>/mappings<br>
 
-Edit existing mapping
-PUT /mappings/<mapping_id>
+Edit existing mapping<br>
+PUT /mappings/<mapping_id><br>
 
-Delete existing mapping
-DELETE /mappings/<mapping_id>
-
-
-
-
-
+Delete existing mapping<br>
+DELETE /mappings/<mapping_id><br>
