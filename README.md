@@ -232,7 +232,8 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 	</tr>
 	<tr>
 	<td> </td>
-      <td>(Delete/DELETE)	Delete existing like / comment</td>
+		<td>(Delete/DELETE)</td>
+		<td>Delete existing like / comment</td>
   </tr>   
   <tr>
     <th>-Profile</th><th> </th><th> </th>
