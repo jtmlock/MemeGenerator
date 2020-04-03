@@ -96,3 +96,113 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 ### [BONUS] Interactive Prototype
 <img src="http://g.recordit.co/GcLpBNYKa7.gif"><br>
 
+## Schema
+
+Meme Generator - Schema Design
+
+<pre>1. User </pre>
+<pre>2. Posts - Memes</pre>
+<pre>3. Comments</pre>
+<pre>4. Likes</pre>
+<pre>5. Follow</pre>
+<pre>6. Text</pre>
+
+
+User
+objectId
+createdAt
+Updated password At
+Post - Meme *(Duplicate for Storage vs Post??)
+objectId
+Author
+Image
+Caption
+Comment Count
+Likes Count
+createdAt
+UpdatedAt
+Comment
+objectId
+Author
+createdAt
+UpdatedAt
+Likes
+objectId
+Author
+createdAt
+Follow
+objectId
+Author
+createdAt
+Text
+objectId
+Author
+createdAt
+
+Data Model
+
+	Property		Type			Description
+Model	User
+	objectId		String			unique User ID
+	createdAt		DateTime		date when login was created (default)
+	UpdatedAt		DateTime		date password was changed
+
+Model	Post *(duplicate for Storage vs Post??)
+	objectId		String			Unique ID for the User post (default)
+Author			pointerToUser		image Author
+Image			File			image that user posts
+Caption		String			meme caption by author
+Comment Count	Number		number of comments that have been posted
+Likes Count		Number		number of likes that have been posted
+createdAt		DateTime		date when post was created 
+UpdatedAt		DateTime		date when meme was last updated
+
+Model Comment
+	objectId		String			unique ID for the comment
+Author			pointer to User	comment Author
+createdAt		DateTime		date when the comment was created
+UpdatedAt		DateTime		date if/when the comment was updated
+
+Model Likes
+	objectId		String			unique Like ID
+	authorWho		pointerToUser		Like author
+	createdAt		DateTime		date Like was created
+
+Model Follow
+	objectId		String			unique Follow ID
+	authorWho		pointerToUser		Follow author
+	createdAt		DateTime		date Follow was created
+
+Model Text
+	objectId		String			unique Text ID
+	authorWho		pointerToUser		Text author
+	createdAt		DateTime		date Text was created
+
+
+Network Requests (ONLY 4 actions you can take on objects)
+CRUD			HTTP Verb		Example
+Create			POST			Creating a new post
+Read			GET			Fetching posts for user’s feed
+Update			PUT			Changing a user’s profile image
+Delete			DELETE		Deleting a comment
+
+Network Requests
+-Login Screen
+(Read/GET) 		Query Login
+(Create/POST)	Create User Login
+
+-Meme Feed
+			(Read/GET) 		Query post where user is Author
+(Create/POST)	Create a new like / comment on Post
+(Delete/DELETE)	Delete existing like / comment
+
+-Profile
+			(Read/GET) 		Query logged in user object
+			(Update/PUT)		Update user profile image
+
+-Generator
+			(Read/GET)		Query images
+			(Create/POST)	Create a new Meme
+
+
+
