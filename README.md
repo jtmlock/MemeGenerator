@@ -214,8 +214,10 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
     </tr>
   <tr>
       <td> </td>
-      <td>(Read/GET)Query Login</td>
-      <td>(Create/POST)	Create User Login</td>
+      <td>(Read/GET)</td>
+	<td>Query Login</td>
+	  <td>(Create/POST)</td>
+	  <td>Create User Login</td>
   </tr>
   <tr>
     <th>-Meme Feed</th><th> </th><th> </th>
