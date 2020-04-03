@@ -227,30 +227,40 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
     <th>-Login Screen</th>
     </tr>
   <tr>
-      <td>(Read/GET) 		Query Login</td>
+      <td></td>
+      <td>(Read/GET)Query Login</td>
       <td>(Create/POST)	Create User Login</td>
   </tr>
   <tr>
     <th>-Meme Feed</th>
   </tr>
   <tr>
-		  <td>(Read/GET) 		Query post where user is Author</td>
-      <td>(Create/POST)	Create a new like / comment on Post</td>
+	  <td></td>
+	  <td>(Read/GET)</td>
+	  <td>Query post where user is Author</td>
+	  <td>(Create/POST)</td>
+	  <td>Create a new like / comment on Post</td>
       <td>(Delete/DELETE)	Delete existing like / comment</td>
   </tr>   
   <tr>
     <th>-Profile</th>
    </tr>
    <tr>
-		  <td>(Read/GET) 		Query logged in user object</td>
-		  <td>(Update/PUT)		Update user profile image</td>
+	<td></td>
+	<td>(Read/GET)</td>
+	<td>Query logged in user object</td>
+	<td>(Update/PUT)</td>
+	<td>Update user profile image</td>
   </tr>
   <tr>
     <th>-Generator</th>
   </tr>
   <tr>
-		  <td>(Read/GET)		Query images</td>
-		  <td>(Create/POST)	Create a new Meme</td>
+	  <td></td>
+	  <td>(Read/GET)</td>
+	  <td>Query images</td>
+	  <td>(Create/POST)</td>
+	  <td>Create a new Meme</td>
    </tr>
 </table>
 
