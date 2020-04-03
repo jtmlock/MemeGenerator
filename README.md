@@ -148,9 +148,9 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 <table>
 	<tr><td> </td> <td>Property</td><td>Type</td><td>Description</td></tr>
 <tr><td>Model User</td> <td> </td> <td> </td> <td> </td> </tr>
-	<tr><td> /td> <td>objectId</td> <td>String</td> <td>unique User ID</td> </tr>
+	<tr><td> </td> <td>objectId</td> <td>String</td> <td>unique User ID</td> </tr>
 	<tr><td> </td> <td>createdAt</td> <td>DateTime</td> <td>date when login was created (default)</td> </tr>
-	<tr><td>/td> <td>UpdatedAt</td> <td>DateTime</td> <td>date password was changed</td> </tr>
+	<tr><td> </td> <td>UpdatedAt</td> <td>DateTime</td> <td>date password was changed</td> </tr>
 	
 <tr><td>Model Post</td> <td> </td> <td> </td> <td> </td> </tr>
 	<tr><td> </td> <td>objectId</td> <td>String</td> <td> </td>Unique ID for the User post (default)</tr>
