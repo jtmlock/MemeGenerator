@@ -206,6 +206,8 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
    <code>}</code><br>
 <code>}</code><br>
 
+## Network Requests 
+
 <table>
   <tr>
     <th>-Login Screen</th><th> </th><th> </th>
@@ -224,6 +226,7 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 	  <td>Query post where user is Author</td>
 	</tr>
 	<tr>
+	<td> </td>
 	  <td>(Create/POST)</td>
 	  <td>Create a new like / comment on Post</td>
       <td>(Delete/DELETE)	Delete existing like / comment</td>
@@ -237,6 +240,7 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 	<td>Query logged in user object</td>
 	</tr>
 	<tr>
+	<td> </td>
 	<td>(Update/PUT)</td>
 	<td>Update user profile image</td>
   </tr>
@@ -249,6 +253,7 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 	  <td>Query images</td>
 	  	</tr>
 	<tr>
+	<td> </td>
 	  <td>(Create/POST)</td>
 	  <td>Create a new Meme</td>
    </tr>
