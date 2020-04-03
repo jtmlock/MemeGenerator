@@ -99,14 +99,14 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 ## Schema
 
 ##  Meme Generator - Schema Design
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. User<br> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Posts - Memes<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Comments<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Likes<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Follow<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. Text<br>
-
+<ol>
+<li>1. User</li>
+<li>2. Posts - Memes</li>
+<li>3. Comments</li>
+<li>4. Likes</li>
+<li>5. Follow</li>
+<li>6. Text</li>
+</ol>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. User<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt<br>
