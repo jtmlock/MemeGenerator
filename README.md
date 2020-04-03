@@ -307,13 +307,3 @@ PUT /mappings/<mapping_id><br>
 Delete existing mapping<br>
 DELETE /mappings/<mapping_id><br>
 
-<table>
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <td>January</td>
-    <td>$100</td>
-  </tr>
-</table>
