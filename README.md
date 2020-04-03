@@ -145,68 +145,68 @@ Meme Generator - Schema Design
 
 Data Model
 
-	Property		Type			Description
+<pre>Property<pre><pre>Type<pre><pre>Description</pre>
 Model	User
-	objectId		String			unique User ID
-	createdAt		DateTime		date when login was created (default)
-	UpdatedAt		DateTime		date password was changed
+<pre>objectId<pre><pre><pre>String<pre><pre><pre>unique User ID</pre>
+<pre>createdAt<pre><pre>DateTime<pre><pre>date when login was created (default)</pre>
+<pre>UpdatedAt<pre><pre>DateTime<pre><pre>date password was changed</pre>
 
-Model	Post *(duplicate for Storage vs Post??)
-	objectId		String			Unique ID for the User post (default)
-	Author			pointerToUser		image Author
-	Image			File			image that user posts
-	Caption			String			meme caption by author
-	Comment Count		Number		number of comments that have been posted
-	Likes Count		Number		number of likes that have been posted
-	createdAt		DateTime		date when post was created 
-	UpdatedAt		DateTime		date when meme was last updated
+Model	Post 
+<pre>objectId<pre><pre>String<pre><pre>Unique ID for the User post (default)</pre>
+<pre>Author<pre><pre>pointerToUser<pre><pre>image Author</pre>
+<pre>Image<pre><pre>File<pre><pre>image that user posts</pre>
+<pre>Caption<pre><pre>String<pre><pre>meme caption by author</pre>
+<pre>Comment Count<pre><pre>Number<pre><pre>number of comments that have been posted/<pre>
+<pre>Likes Count<pre><pre>Number<pre><pre>number of likes that have been posted</pre>
+<pre>createdAt<pre><pre>DateTime<pre><pre>date when post was created </pre>
+<pre>UpdatedAt<pre><pre>DateTime<pre>date when meme was last updated</pre>
 
 Model Comment
-	objectId		String			unique ID for the comment
-	Author			pointer to User	comment Author
-	createdAt		DateTime		date when the comment was created
-	UpdatedAt		DateTime		date if/when the comment was updated
+<pre><pre>objectId<pre><pre>String<pre><pre>unique ID for the comment</pre>
+<pre><pre>Author<pre><pre>pointer to User<pre>comment Author</pre>
+<pre><pre>createdAt<pre><pre>DateTime<pre><pre>date when the comment was created</pre>
+<pre><pre>UpdatedAt<pre><pre>DateTime<pre><pre>date if/when the comment was updated</pre>
 
 Model Likes
-	objectId		String			unique Like ID
-	authorWho		pointerToUser		Like author
-	createdAt		DateTime		date Like was created
+<pre><pre>objectId<pre><pre>String<pre><pre>unique Like ID</pre>
+<pre><pre>authorWho<pre><pre>pointerToUser<pre><pre>Like author</pre>
+<pre><pre>createdAt<pre><pre>DateTime<pre><pre>dateLike was created</pre>
 
 Model Follow
-	objectId		String			unique Follow ID
-	authorWho		pointerToUser		Follow author
-	createdAt		DateTime		date Follow was created
+<pre>objectId<pre><pre>String<pre><pre><pre>unique Follow ID</pre>
+<pre>authorWho<pre><pre>pointerToUser<pre><pre>Follow author</pre>
+<pre>createdAt<pre><pre>DateTime<pre><pre>date Follow was created</pre>
 
 Model Text
-	objectId		String			unique Text ID
-	authorWho		pointerToUser		Text author
-	createdAt		DateTime		date Text was created
+<pre>objectId<pre><pre>String<pre><pre><pre>unique Text ID</pre>
+<pre>authorWho<pre><pre>pointerToUser<pre><pre>Text author</pre>
+<pre>createdAt<pre><pre>DateTime<pre><pre>date Text was created</pre>
 
 
-Network Requests (ONLY 4 actions you can take on objects)
-CRUD			HTTP Verb		Example
-Create			POST			Creating a new post
-Read			GET			Fetching posts for user’s feed
-Update			PUT			Changing a user’s profile image
-Delete			DELETE		Deleting a comment
+Network Requests (ONLY 4 actions you can take on objects)</pre>
+CRUD<pre><pre><pre>HTTP Verb<pre><pre>Example</pre>
+Create<pre><pre><pre>POST<pre><pre><pre>Creating a new post</pre>
+Read<pre><pre><pre>GET<pre><pre><pre>Fetching posts for user’s feed</pre>
+Update<pre><pre><pre>PUT<pre><pre><pre>Changing a user’s profile image</pre>
+Delete<pre><pre><pre>DELETE<pre><pre>Deleting a comment</pre>
 
 Network Requests
 -Login Screen
-			(Read/GET) 		Query Login
-			(Create/POST)	Create User Login
+<pre><pre><pre>(Read/GET)<pre><pre><pre>Query Login</pre>
+<pre><pre><pre>(Create/POST)<pre>Create User Login</pre>
 
 -Meme Feed
-			(Read/GET) 		Query post where user is Author
-			(Create/POST)	Create a new like / comment on Post
-			(Delete/DELETE)	Delete existing like / comment
+<pre><pre><pre>(Read/GET)<pre><pre><pre>Query post where user is Author</pre>
+<pre><pre><pre>(Create/POST)<pre>Create a new like / comment on Post</pre>
+<pre><pre><pre>(Delete/DELETE)<pre>Delete existing like / comment</pre>
 
 -Profile
-			(Read/GET) 		Query logged in user object
-			(Update/PUT)		Update user profile image
+<pre><pre><pre>(Read/GET)<pre><pre><pre>Query logged in user object</pre>
+<pre><pre><pre>(Update/PUT)<pre><pre><pre>Update user profile image</pre>
 
 -Generator
-			(Read/GET)		Query images
-			(Create/POST)	Create a new Meme
+<pre><pre><pre>(Read/GET)<pre><pre>Query images</pre>
+<pre><pre><pre>(Create/POST)<pre>Create a new Meme</pre>
 
 
 
