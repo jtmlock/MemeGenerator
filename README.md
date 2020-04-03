@@ -213,63 +213,37 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 ## Network Requests 
 
 <table>
-  <tr>
-    <th>-Login Screen</th><th> </th><th> </th>
-    </tr>
-  <tr>
-      <td> </td>
-      <td>(Read/GET)</td>
-	<td>Query Login</td>
-	</tr>
-	<tr>
-	<td> </td>	
-	  <td>(Create/POST)</td>
-	  <td>Create User Login</td>
-  </tr>
-  <tr>
-    <th>-Meme Feed</th><th> </th><th> </th>
-  </tr>
-  <tr>
-	  <td> </td>
-	  <td>(Read/GET)</td>
-	  <td>Query post where user is Author</td>
-	</tr>
-	<tr>
-	<td> </td>
-	  <td>(Create/POST)</td>
-	  <td>Create a new like / comment on Post</td>
-	</tr>
-	<tr>
-	<td> </td>
-		<td>(Delete/DELETE)</td>
-		<td>Delete existing like / comment</td>
-  </tr>   
-  <tr>
-    <th>-Profile</th><th> </th><th> </th>
-   </tr>
-   <tr>
-	<td> </td>
+<tr><th>-Login Screen</th><th> </th><th> </th></tr>
+  <tr><td> </td>
+        <td>(Read/GET)</td>
+	<td>Query Login</td></tr>
+	<tr><td> </td>	
+	<td>(Create/POST)</td>
+	<td>Create User Login</td></tr>
+  <tr><th>-Meme Feed</th><th> </th><th> </th></tr>
+	<tr><td> </td>
 	<td>(Read/GET)</td>
-	<td>Query logged in user object</td>
-	</tr>
-	<tr>
-	<td> </td>
+	<td>Query post where user is Author</td></tr>
+	<tr><td> </td>
+	<td>(Create/POST)</td>
+	<td>Create a new like / comment on Post</td></tr>
+	<tr><td> </td>
+	<td>(Delete/DELETE)</td>
+	<td>Delete existing like / comment</td></tr>
+  <tr><th>-Profile</th><th> </th><th> </th></tr>
+	<tr><td> </td>
+	<td>(Read/GET)</td>
+	<td>Query logged in user object</td></tr>
+	<tr><td> </td>
 	<td>(Update/PUT)</td>
-	<td>Update user profile image</td>
-  </tr>
-  <tr>
-    <th>-Generator</th><th> </th><th> </th>
-  </tr>
-  <tr>
-	  <td> </td>
-	  <td>(Read/GET)</td>
-	  <td>Query images</td>
-	  	</tr>
-	<tr>
-	<td> </td>
-	  <td>(Create/POST)</td>
-	  <td>Create a new Meme</td>
-   </tr>
+	<td>Update user profile image</td></tr>
+  <tr><th>-Generator</th><th> </th><th> </th></tr>
+  	<tr><td> </td>
+	<td>(Read/GET)</td>
+	<td>Query images</td></tr>
+	<tr><td> </td>
+	<td>(Create/POST)</td>
+	<td>Create a new Meme</td></tr>
 </table>
 
 
