@@ -153,10 +153,10 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 	<tr><td> </td> <td>UpdatedAt</td> <td>DateTime</td> <td>date password was changed</td> </tr>
 	
 <tr><td>Model Post</td> <td> </td> <td> </td> <td> </td> </tr>
-	<tr><td> </td> <td>objectId</td> <td>String</td> <td> </td>Unique ID for the User post (default)</tr>
-	<tr><td> </td> <td>Author</td> <td>pointerToUser</td> <td>image Author</td> </tr>
-	<tr><td> </td> <td>Image</td> <td>File</td> <td> </td>image that user posts</tr>
-	<tr><td> </td> <td>Caption</td> <td>String</td> <td> </td>meme caption by author</tr>
+	<tr><td> </td> <td>objectId</td> <td>String</td> <td> Unique ID for the User post (default)</td></tr>
+	<tr><td> </td> <td>Author</td> <td>pointerToUser</td> <td>image Author</td></tr>
+	<tr><td> </td> <td>Image</td> <td>File</td> <td>image that user posts</td></tr>
+	<tr><td> </td> <td>Caption</td> <td>String</td> <td>meme caption by author</td></tr>
 	<tr><td> </td> <td>Comment Count</td> <td>Number</td> <td>number of comments that have been posted</td> </tr>
 	<tr><td> </td> <td>Likes Count</td> <td>Number</td> <td>number of likes that have been posted</td> </tr>
 	<tr><td> </td> <td>createdAt</td> <td>DateTime</td> <td>date when post was created</td> </tr>
