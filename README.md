@@ -100,113 +100,110 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 
 Meme Generator - Schema Design
 
-<pre>1. User </pre>
-<pre>2. Posts - Memes</pre>
-<pre>3. Comments</pre>
-<pre>4. Likes</pre>
-<pre>5. Follow</pre>
-<pre>6. Text</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. User 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Posts - Memes
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Comments
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Likes
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Follow
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. Text
 
-<pre>1. User</pre>
-<pre><pre>objectId</pre>
-<pre><pre>createdAt</pre>
-<pre><pre>Updated password At</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. User
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updated password At
 
-<pre>2. Post - Meme</pre>
-<pre><pre>objectId</pre>
-<pre><pre>Author</pre>
-<pre><pre>Image</pre>
-<pre><pre>Caption</pre>
-<pre><pre>Comment Count</pre>
-<pre><pre>Likes Count</pre>
-<pre><pre>createdAt</pre>
-<pre><pre>UpdatedAt</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Post - Meme
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Image
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caption
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment Count
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Likes Count
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdatedAt
 
-<pre>3. Comment</pre>
-<pre><pre>objectId</pre>
-<pre><pre>Author</pre>
-<pre><pre>createdAt</pre>
-<pre><pre>UpdatedAt</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Comment
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdatedAt
 
-<pre>4. Likes</pre>
-<pre><pre>objectId</pre>
-<pre><pre>Author</pre>
-<pre><pre>createdAt</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Likes
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt
 
-<pre>5. Follow</pre>
-<pre><pre>objectId</pre>
-<pre><pre>Author</pre>
-<pre><pre>createdAt</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Follow
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt
 
-<pre>6. Text</pre>
-<pre><pre>objectId</pre>
-<pre><pre>Author</pre>
-<pre><pre>createdAt</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. Text
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt
 
 Data Model
 
-<pre>Property<pre><pre>Type<pre><pre>Description</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Property&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description
 Model	User
-<pre>objectId<pre><pre><pre>String<pre><pre><pre>unique User ID</pre>
-<pre>createdAt<pre><pre>DateTime<pre><pre>date when login was created (default)</pre>
-<pre>UpdatedAt<pre><pre>DateTime<pre><pre>date password was changed</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unique User ID
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date when login was created (default)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdatedAt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date password was changed
 
 Model	Post 
-<pre>objectId<pre><pre>String<pre><pre>Unique ID for the User post (default)</pre>
-<pre>Author<pre><pre>pointerToUser<pre><pre>image Author</pre>
-<pre>Image<pre><pre>File<pre><pre>image that user posts</pre>
-<pre>Caption<pre><pre>String<pre><pre>meme caption by author</pre>
-<pre>Comment Count<pre><pre>Number<pre><pre>number of comments that have been posted/<pre>
-<pre>Likes Count<pre><pre>Number<pre><pre>number of likes that have been posted</pre>
-<pre>createdAt<pre><pre>DateTime<pre><pre>date when post was created </pre>
-<pre>UpdatedAt<pre><pre>DateTime<pre>date when meme was last updated</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unique ID for the User post (default)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pointerToUser&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image Author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image that user posts
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caption&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;meme caption by author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment Count&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number of comments that have been posted/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Likes Count&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number of likes that have been posted
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date when post was created 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdatedAt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date when meme was last updated
 
 Model Comment
-<pre><pre>objectId<pre><pre>String<pre><pre>unique ID for the comment</pre>
-<pre><pre>Author<pre><pre>pointer to User<pre>comment Author</pre>
-<pre><pre>createdAt<pre><pre>DateTime<pre><pre>date when the comment was created</pre>
-<pre><pre>UpdatedAt<pre><pre>DateTime<pre><pre>date if/when the comment was updated</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unique ID for the comment
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pointer to User&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comment Author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date when the comment was created
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdatedAt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date if/when the comment was updated
 
 Model Likes
-<pre><pre>objectId<pre><pre>String<pre><pre>unique Like ID</pre>
-<pre><pre>authorWho<pre><pre>pointerToUser<pre><pre>Like author</pre>
-<pre><pre>createdAt<pre><pre>DateTime<pre><pre>dateLike was created</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unique Like ID
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;authorWho&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pointerToUser&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dateLike was created
 
 Model Follow
-<pre>objectId<pre><pre>String<pre><pre><pre>unique Follow ID</pre>
-<pre>authorWho<pre><pre>pointerToUser<pre><pre>Follow author</pre>
-<pre>createdAt<pre><pre>DateTime<pre><pre>date Follow was created</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unique Follow ID
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;authorWho&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pointerToUser&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date Follow was created
 
 Model Text
-<pre>objectId<pre><pre>String<pre><pre><pre>unique Text ID</pre>
-<pre>authorWho<pre><pre>pointerToUser<pre><pre>Text author</pre>
-<pre>createdAt<pre><pre>DateTime<pre><pre>date Text was created</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;objectId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unique Text ID
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;authorWho&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pointerToUser&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date Text was created
 
 
-Network Requests (ONLY 4 actions you can take on objects)</pre>
-CRUD<pre><pre><pre>HTTP Verb<pre><pre>Example</pre>
-Create<pre><pre><pre>POST<pre><pre><pre>Creating a new post</pre>
-Read<pre><pre><pre>GET<pre><pre><pre>Fetching posts for user’s feed</pre>
-Update<pre><pre><pre>PUT<pre><pre><pre>Changing a user’s profile image</pre>
-Delete<pre><pre><pre>DELETE<pre><pre>Deleting a comment</pre>
+Network Requests (ONLY 4 actions you can take on objects)
+CRUD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTTP Verb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example
+Create&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating a new post
+Read&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fetching posts for user’s feed
+Update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Changing a user’s profile image
+Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DELETE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deleting a comment
 
 Network Requests
 -Login Screen
-<pre><pre><pre>(Read/GET)<pre><pre><pre>Query Login</pre>
-<pre><pre><pre>(Create/POST)<pre>Create User Login</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Read/GET)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query Login
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Create/POST)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create User Login
 
 -Meme Feed
-<pre><pre><pre>(Read/GET)<pre><pre><pre>Query post where user is Author</pre>
-<pre><pre><pre>(Create/POST)<pre>Create a new like / comment on Post</pre>
-<pre><pre><pre>(Delete/DELETE)<pre>Delete existing like / comment</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Read/GET)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query post where user is Author
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Create/POST)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new like / comment on Post
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Delete/DELETE)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete existing like / comment
 
 -Profile
-<pre><pre><pre>(Read/GET)<pre><pre><pre>Query logged in user object</pre>
-<pre><pre><pre>(Update/PUT)<pre><pre><pre>Update user profile image</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Read/GET)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query logged in user object
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Update/PUT)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update user profile image
 
 -Generator
-<pre><pre><pre>(Read/GET)<pre><pre>Query images</pre>
-<pre><pre><pre>(Create/POST)<pre>Create a new Meme</pre>
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Read/GET)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query images
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Create/POST)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new Meme
