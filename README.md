@@ -216,6 +216,9 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
       <td> </td>
       <td>(Read/GET)</td>
 	<td>Query Login</td>
+	</tr>
+	<tr>
+	<td> </td>	
 	  <td>(Create/POST)</td>
 	  <td>Create User Login</td>
   </tr>
