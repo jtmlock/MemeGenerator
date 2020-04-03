@@ -183,12 +183,16 @@ Model Text<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;createdAt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date Text was created<br>
 
 
-<b> Network Requests (ONLY 4 actions you can take on objects)</b> <br>
-CRUD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTTP Verb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example<br>
-Create&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating a new post<br>
-Read&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fetching posts for user’s feed<br>
-Update&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Changing a user’s profile image<br>
-Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DELETE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deleting a comment<br>
+<table>
+	<tr><th>Network Requests</th> <td> </td> <td> </td> </tr>
+	<tr><td>CRUD</td> <td> HTTP VERB </td> <td> Example </td> </tr>
+	<tr><td>Create</td> <td> POST </td> <td> Creating a new post </td> </tr>
+	<tr><td>Read</td> <td> GET </td> <td> Fetching posts for user’s feed </td> </tr>
+	<tr><td>Update</td> <td> PUT </td> <td> Changing a user’s profile image </td> </tr>
+	<tr><td>Delete</td> <td> DELETE </td> <td> Deleting a comment </td> </tr>
+</table>
+	
+		
 
 ## Network Requests <br> 
 -Login Screen<br>
@@ -274,7 +278,7 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 ## OPTIONAL Heroku Endpoints
 
 <table>
-<tr> <th>HTTP VERB</th> <th> </th> <th> </th> </tr>
+<tr> <th>HTTP VERB</th> <th>Endpoint</th> <th>Decription</th> </tr>
 <tr> <td>POST</td><td><code> https://hc-central.heroku.com/auth/<app_name_or_app_uuid> </code></td><td> Link the new add-on to your Heroku user account </td> </tr>
 <tr> <td>POST</td><td><code> /connections/<connection_id>/actions/import </code></td><td> Import a mapping configuration <td> </tr>
 <tr> <td>GET</td><td><code> /connections/<connection_id>  </code></td><td> Monitor the connection and mapping status </td> </tr>
