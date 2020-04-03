@@ -211,15 +211,15 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
     <th>-Login Screen</th><th> </th><th> </th>
     </tr>
   <tr>
-      <td></td>
+      <td> </td>
       <td>(Read/GET)Query Login</td>
       <td>(Create/POST)	Create User Login</td>
   </tr>
   <tr>
-    <th>-Meme Feed</th><th></th>
+    <th>-Meme Feed</th><th> </th><th> </th>
   </tr>
   <tr>
-	  <td></td>
+	  <td> </td>
 	  <td>(Read/GET)</td>
 	  <td>Query post where user is Author</td>
 	</tr>
@@ -232,7 +232,7 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
     <th>-Profile</th><th> </th><th> </th>
    </tr>
    <tr>
-	<td></td>
+	<td> </td>
 	<td>(Read/GET)</td>
 	<td>Query logged in user object</td>
 	</tr>
@@ -244,7 +244,7 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
     <th>-Generator</th><th> </th><th> </th>
   </tr>
   <tr>
-	  <td></td>
+	  <td> </td>
 	  <td>(Read/GET)</td>
 	  <td>Query images</td>
 	  	</tr>
