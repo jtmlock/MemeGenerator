@@ -229,6 +229,9 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 	<td> </td>
 	  <td>(Create/POST)</td>
 	  <td>Create a new like / comment on Post</td>
+	</tr>
+	<tr>
+	<td> </td>
       <td>(Delete/DELETE)	Delete existing like / comment</td>
   </tr>   
   <tr>
