@@ -194,17 +194,17 @@ Network Requests<br>
 -Login Screen<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <code>
-let query = PFQuery(className:"Post")
-query.whereKey("author", equalTo: currentUser)
-query.order(byDescending: "createdAt")
-query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-   if let error = error { 
-      print(error.localizedDescription)
-   } else if let posts = posts {
-      print("Successfully retrieved \(posts.count) posts.")
-  // TODO: Do something with posts...
-   }
-}
+let query = PFQuery(className:"Post")<br>
+query.whereKey("author", equalTo: currentUser)<br>
+query.order(byDescending: "createdAt")<br>
+query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in<br>
+   if let error = error { <br>
+      print(error.localizedDescription)<br>
+   } else if let posts = posts {<br>
+      print("Successfully retrieved \(posts.count) posts.")<br>
+  // TODO: Do something with posts...<br>
+   }<br>
+}<br>
   </code>
 (Read/GET)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query Login<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Create/POST)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create User Login<br>
