@@ -208,7 +208,7 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 
 <table>
   <tr>
-    <th>-Login Screen</th><th></th><th></th>
+    <th>-Login Screen</th><th> </th><th> </th>
     </tr>
   <tr>
       <td></td>
@@ -229,7 +229,7 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
       <td>(Delete/DELETE)	Delete existing like / comment</td>
   </tr>   
   <tr>
-    <th>-Profile</th><th></th>
+    <th>-Profile</th><th> </th><th> </th>
    </tr>
    <tr>
 	<td></td>
@@ -241,7 +241,7 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 	<td>Update user profile image</td>
   </tr>
   <tr>
-    <th>-Generator</th>
+    <th>-Generator</th><th> </th><th> </th>
   </tr>
   <tr>
 	  <td></td>
