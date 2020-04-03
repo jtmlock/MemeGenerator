@@ -107,37 +107,41 @@ Meme Generator - Schema Design
 <pre>5. Follow</pre>
 <pre>6. Text</pre>
 
+<pre>1. User</pre>
+<pre><pre>objectId</pre>
+<pre><pre>createdAt</pre>
+<pre><pre>Updated password At</pre>
 
-User
-objectId
-createdAt
-Updated password At
-Post - Meme *(Duplicate for Storage vs Post??)
-objectId
-Author
-Image
-Caption
-Comment Count
-Likes Count
-createdAt
-UpdatedAt
-Comment
-objectId
-Author
-createdAt
-UpdatedAt
-Likes
-objectId
-Author
-createdAt
-Follow
-objectId
-Author
-createdAt
-Text
-objectId
-Author
-createdAt
+<pre>2. Post - Meme</pre>
+<pre><pre>objectId</pre>
+<pre><pre>Author</pre>
+<pre><pre>Image</pre>
+<pre><pre>Caption</pre>
+<pre><pre>Comment Count</pre>
+<pre><pre>Likes Count</pre>
+<pre><pre>createdAt</pre>
+<pre><pre>UpdatedAt</pre>
+
+<pre>3. Comment</pre>
+<pre><pre>objectId</pre>
+<pre><pre>Author</pre>
+<pre><pre>createdAt</pre>
+<pre><pre>UpdatedAt</pre>
+
+<pre>4. Likes</pre>
+<pre><pre>objectId</pre>
+<pre><pre>Author</pre>
+<pre><pre>createdAt</pre>
+
+<pre>5. Follow</pre>
+<pre><pre>objectId</pre>
+<pre><pre>Author</pre>
+<pre><pre>createdAt</pre>
+
+<pre>6. Text</pre>
+<pre><pre>objectId</pre>
+<pre><pre>Author</pre>
+<pre><pre>createdAt</pre>
 
 Data Model
 
@@ -149,19 +153,19 @@ Model	User
 
 Model	Post *(duplicate for Storage vs Post??)
 	objectId		String			Unique ID for the User post (default)
-Author			pointerToUser		image Author
-Image			File			image that user posts
-Caption		String			meme caption by author
-Comment Count	Number		number of comments that have been posted
-Likes Count		Number		number of likes that have been posted
-createdAt		DateTime		date when post was created 
-UpdatedAt		DateTime		date when meme was last updated
+	Author			pointerToUser		image Author
+	Image			File			image that user posts
+	Caption			String			meme caption by author
+	Comment Count		Number		number of comments that have been posted
+	Likes Count		Number		number of likes that have been posted
+	createdAt		DateTime		date when post was created 
+	UpdatedAt		DateTime		date when meme was last updated
 
 Model Comment
 	objectId		String			unique ID for the comment
-Author			pointer to User	comment Author
-createdAt		DateTime		date when the comment was created
-UpdatedAt		DateTime		date if/when the comment was updated
+	Author			pointer to User	comment Author
+	createdAt		DateTime		date when the comment was created
+	UpdatedAt		DateTime		date if/when the comment was updated
 
 Model Likes
 	objectId		String			unique Like ID
@@ -188,13 +192,13 @@ Delete			DELETE		Deleting a comment
 
 Network Requests
 -Login Screen
-(Read/GET) 		Query Login
-(Create/POST)	Create User Login
+			(Read/GET) 		Query Login
+			(Create/POST)	Create User Login
 
 -Meme Feed
 			(Read/GET) 		Query post where user is Author
-(Create/POST)	Create a new like / comment on Post
-(Delete/DELETE)	Delete existing like / comment
+			(Create/POST)	Create a new like / comment on Post
+			(Delete/DELETE)	Delete existing like / comment
 
 -Profile
 			(Read/GET) 		Query logged in user object
