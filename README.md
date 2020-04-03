@@ -222,6 +222,40 @@ Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Read/GET)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Query images<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Create/POST)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new Meme<br>
 
+<table>
+  <tr>
+    <th>-Login Screen</th>
+    </tr>
+  <tr>
+      <td>(Read/GET) 		Query Login</td>
+      <td>(Create/POST)	Create User Login</td>
+  </tr>
+  <tr>
+    <th>-Meme Feed</th>
+  </tr>
+  <tr>
+		  <td>(Read/GET) 		Query post where user is Author</td>
+      <td>(Create/POST)	Create a new like / comment on Post</td>
+      <td>(Delete/DELETE)	Delete existing like / comment</td>
+  </tr>   
+  <tr>
+    <th>-Profile</th>
+   </tr>
+   <tr>
+		  <td>(Read/GET) 		Query logged in user object</td>
+		  <td>(Update/PUT)		Update user profile image</td>
+  </tr>
+  <tr>
+    <th>-Generator</th>
+  </tr>
+  <tr>
+		  <td>(Read/GET)		Query images</td>
+		  <td>(Create/POST)	Create a new Meme</td>
+   </tr>
+</table>
+
+
+
 
 ## OPTIONAL Heroku Endpoints
 
