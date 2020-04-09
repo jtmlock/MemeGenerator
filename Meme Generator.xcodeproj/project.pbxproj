@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04072C42243FE9680052D64F /* LoginCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04072C41243FE9680052D64F /* LoginCollectionViewController.swift */; };
+		04072C44243FE96E0052D64F /* FeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04072C43243FE96E0052D64F /* FeedCollectionViewController.swift */; };
 		04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84A8E2424757E00771B5A /* AppDelegate.swift */; };
 		04C84A912424757E00771B5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84A902424757E00771B5A /* SceneDelegate.swift */; };
-		04C84A932424757E00771B5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84A922424757E00771B5A /* ViewController.swift */; };
 		04C84A962424757E00771B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C84A942424757E00771B5A /* Main.storyboard */; };
 		04C84A982424758300771B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C84A972424758300771B5A /* Assets.xcassets */; };
 		04C84A9B2424758300771B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C84A992424758300771B5A /* LaunchScreen.storyboard */; };
 		04C84AA62424758300771B5A /* Meme_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84AA52424758300771B5A /* Meme_GeneratorTests.swift */; };
 		04C84AB12424758300771B5A /* Meme_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84AB02424758300771B5A /* Meme_GeneratorUITests.swift */; };
+		2C739D5BF4AE86A18A75C79D /* Pods_Meme_Generator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E28601A4E82B6BA5B9F362 /* Pods_Meme_Generator.framework */; };
+		4D617207398AC1C7D58804E2 /* Pods_Meme_Generator_Meme_GeneratorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FDC87155332F03C84EBD4F /* Pods_Meme_Generator_Meme_GeneratorUITests.framework */; };
+		61E766A0F591E34E835A1E99 /* Pods_Meme_GeneratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E87A994B57F9225D04AD7F7 /* Pods_Meme_GeneratorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04072C41243FE9680052D64F /* LoginCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginCollectionViewController.swift; path = ../../../.Trash/LoginCollectionViewController.swift; sourceTree = "<group>"; };
+		04072C43243FE96E0052D64F /* FeedCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCollectionViewController.swift; path = ../../../.Trash/FeedCollectionViewController.swift; sourceTree = "<group>"; };
 		04C84A8B2424757E00771B5A /* Meme Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meme Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C84A8E2424757E00771B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C84A902424757E00771B5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04C84A922424757E00771B5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04C84A952424757E00771B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04C84A972424758300771B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C84A9A2424758300771B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,15 @@
 		04C84AAC2424758300771B5A /* Meme GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meme GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C84AB02424758300771B5A /* Meme_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme_GeneratorUITests.swift; sourceTree = "<group>"; };
 		04C84AB22424758300771B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372D330302901802CD254D94 /* Pods-Meme Generator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meme Generator.debug.xcconfig"; path = "Target Support Files/Pods-Meme Generator/Pods-Meme Generator.debug.xcconfig"; sourceTree = "<group>"; };
+		43BCC0A3DA8F586070531D83 /* Pods-Meme Generator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meme Generator.release.xcconfig"; path = "Target Support Files/Pods-Meme Generator/Pods-Meme Generator.release.xcconfig"; sourceTree = "<group>"; };
+		5E87A994B57F9225D04AD7F7 /* Pods_Meme_GeneratorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meme_GeneratorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FDC87155332F03C84EBD4F /* Pods_Meme_Generator_Meme_GeneratorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meme_Generator_Meme_GeneratorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E28601A4E82B6BA5B9F362 /* Pods_Meme_Generator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meme_Generator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ECC5E9563F8D1DEAE5C772D /* Pods-Meme GeneratorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meme GeneratorTests.release.xcconfig"; path = "Target Support Files/Pods-Meme GeneratorTests/Pods-Meme GeneratorTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD3EDDD2A0C9BB222B62EAC9 /* Pods-Meme Generator-Meme GeneratorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meme Generator-Meme GeneratorUITests.release.xcconfig"; path = "Target Support Files/Pods-Meme Generator-Meme GeneratorUITests/Pods-Meme Generator-Meme GeneratorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CF5A1C817AE67336B4C92EB8 /* Pods-Meme GeneratorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meme GeneratorTests.debug.xcconfig"; path = "Target Support Files/Pods-Meme GeneratorTests/Pods-Meme GeneratorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7CB87D1AA1483056FE37D10 /* Pods-Meme Generator-Meme GeneratorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meme Generator-Meme GeneratorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Meme Generator-Meme GeneratorUITests/Pods-Meme Generator-Meme GeneratorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C739D5BF4AE86A18A75C79D /* Pods_Meme_Generator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E766A0F591E34E835A1E99 /* Pods_Meme_GeneratorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D617207398AC1C7D58804E2 /* Pods_Meme_Generator_Meme_GeneratorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				04C84AA42424758300771B5A /* Meme GeneratorTests */,
 				04C84AAF2424758300771B5A /* Meme GeneratorUITests */,
 				04C84A8C2424757E00771B5A /* Products */,
+				A580BCAA1E115758D04721B1 /* Pods */,
+				DAF6573BD407CAFE159AC47A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +120,12 @@
 			children = (
 				04C84A8E2424757E00771B5A /* AppDelegate.swift */,
 				04C84A902424757E00771B5A /* SceneDelegate.swift */,
-				04C84A922424757E00771B5A /* ViewController.swift */,
 				04C84A942424757E00771B5A /* Main.storyboard */,
 				04C84A972424758300771B5A /* Assets.xcassets */,
 				04C84A992424758300771B5A /* LaunchScreen.storyboard */,
 				04C84A9C2424758300771B5A /* Info.plist */,
+				04072C41243FE9680052D64F /* LoginCollectionViewController.swift */,
+				04072C43243FE96E0052D64F /* FeedCollectionViewController.swift */,
 			);
 			path = "Meme Generator";
 			sourceTree = "<group>";
@@ -128,6 +148,29 @@
 			path = "Meme GeneratorUITests";
 			sourceTree = "<group>";
 		};
+		A580BCAA1E115758D04721B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				372D330302901802CD254D94 /* Pods-Meme Generator.debug.xcconfig */,
+				43BCC0A3DA8F586070531D83 /* Pods-Meme Generator.release.xcconfig */,
+				D7CB87D1AA1483056FE37D10 /* Pods-Meme Generator-Meme GeneratorUITests.debug.xcconfig */,
+				AD3EDDD2A0C9BB222B62EAC9 /* Pods-Meme Generator-Meme GeneratorUITests.release.xcconfig */,
+				CF5A1C817AE67336B4C92EB8 /* Pods-Meme GeneratorTests.debug.xcconfig */,
+				9ECC5E9563F8D1DEAE5C772D /* Pods-Meme GeneratorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DAF6573BD407CAFE159AC47A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88E28601A4E82B6BA5B9F362 /* Pods_Meme_Generator.framework */,
+				85FDC87155332F03C84EBD4F /* Pods_Meme_Generator_Meme_GeneratorUITests.framework */,
+				5E87A994B57F9225D04AD7F7 /* Pods_Meme_GeneratorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C84AB52424758300771B5A /* Build configuration list for PBXNativeTarget "Meme Generator" */;
 			buildPhases = (
+				70FCE8EB8B63887873E8F54A /* [CP] Check Pods Manifest.lock */,
 				04C84A872424757E00771B5A /* Sources */,
 				04C84A882424757E00771B5A /* Frameworks */,
 				04C84A892424757E00771B5A /* Resources */,
+				6197B26243D751A7B6F467AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C84AB82424758300771B5A /* Build configuration list for PBXNativeTarget "Meme GeneratorTests" */;
 			buildPhases = (
+				3A3F82FD388E9BFE115FD3EF /* [CP] Check Pods Manifest.lock */,
 				04C84A9D2424758300771B5A /* Sources */,
 				04C84A9E2424758300771B5A /* Frameworks */,
 				04C84A9F2424758300771B5A /* Resources */,
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C84ABB2424758300771B5A /* Build configuration list for PBXNativeTarget "Meme GeneratorUITests" */;
 			buildPhases = (
+				719F507AA29621CC664BC4B2 /* [CP] Check Pods Manifest.lock */,
 				04C84AA82424758300771B5A /* Sources */,
 				04C84AA92424758300771B5A /* Frameworks */,
 				04C84AAA2424758300771B5A /* Resources */,
+				3153B5A991177785BFDF45C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,12 +302,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3153B5A991177785BFDF45C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meme Generator-Meme GeneratorUITests/Pods-Meme Generator-Meme GeneratorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meme Generator-Meme GeneratorUITests/Pods-Meme Generator-Meme GeneratorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meme Generator-Meme GeneratorUITests/Pods-Meme Generator-Meme GeneratorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A3F82FD388E9BFE115FD3EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meme GeneratorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6197B26243D751A7B6F467AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meme Generator/Pods-Meme Generator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meme Generator/Pods-Meme Generator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meme Generator/Pods-Meme Generator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70FCE8EB8B63887873E8F54A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meme Generator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		719F507AA29621CC664BC4B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meme Generator-Meme GeneratorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04C84A872424757E00771B5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C84A932424757E00771B5A /* ViewController.swift in Sources */,
+				04072C44243FE96E0052D64F /* FeedCollectionViewController.swift in Sources */,
+				04072C42243FE9680052D64F /* LoginCollectionViewController.swift in Sources */,
 				04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */,
 				04C84A912424757E00771B5A /* SceneDelegate.swift in Sources */,
 			);
@@ -432,6 +584,7 @@
 		};
 		04C84AB62424758300771B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372D330302901802CD254D94 /* Pods-Meme Generator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +602,7 @@
 		};
 		04C84AB72424758300771B5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43BCC0A3DA8F586070531D83 /* Pods-Meme Generator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +620,7 @@
 		};
 		04C84AB92424758300771B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5A1C817AE67336B4C92EB8 /* Pods-Meme GeneratorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +642,7 @@
 		};
 		04C84ABA2424758300771B5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ECC5E9563F8D1DEAE5C772D /* Pods-Meme GeneratorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +664,7 @@
 		};
 		04C84ABC2424758300771B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CB87D1AA1483056FE37D10 /* Pods-Meme Generator-Meme GeneratorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +684,7 @@
 		};
 		04C84ABD2424758300771B5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3EDDD2A0C9BB222B62EAC9 /* Pods-Meme Generator-Meme GeneratorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
