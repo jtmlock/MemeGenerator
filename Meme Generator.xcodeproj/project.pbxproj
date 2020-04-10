@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04072C42243FE9680052D64F /* LoginCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04072C41243FE9680052D64F /* LoginCollectionViewController.swift */; };
-		04072C44243FE96E0052D64F /* FeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04072C43243FE96E0052D64F /* FeedCollectionViewController.swift */; };
+		043940C5244000AB0000E494 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C4244000AB0000E494 /* LoginViewController.swift */; };
+		043940C92440066B0000E494 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C82440066A0000E494 /* FeedViewController.swift */; };
 		04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84A8E2424757E00771B5A /* AppDelegate.swift */; };
 		04C84A912424757E00771B5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84A902424757E00771B5A /* SceneDelegate.swift */; };
 		04C84A962424757E00771B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C84A942424757E00771B5A /* Main.storyboard */; };
@@ -39,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04072C41243FE9680052D64F /* LoginCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginCollectionViewController.swift; path = ../../../.Trash/LoginCollectionViewController.swift; sourceTree = "<group>"; };
-		04072C43243FE96E0052D64F /* FeedCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCollectionViewController.swift; path = ../../../.Trash/FeedCollectionViewController.swift; sourceTree = "<group>"; };
+		043940C4244000AB0000E494 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		043940C82440066A0000E494 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		04C84A8B2424757E00771B5A /* Meme Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meme Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C84A8E2424757E00771B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C84A902424757E00771B5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,11 +121,11 @@
 				04C84A8E2424757E00771B5A /* AppDelegate.swift */,
 				04C84A902424757E00771B5A /* SceneDelegate.swift */,
 				04C84A942424757E00771B5A /* Main.storyboard */,
+				043940C82440066A0000E494 /* FeedViewController.swift */,
+				043940C4244000AB0000E494 /* LoginViewController.swift */,
 				04C84A972424758300771B5A /* Assets.xcassets */,
 				04C84A992424758300771B5A /* LaunchScreen.storyboard */,
 				04C84A9C2424758300771B5A /* Info.plist */,
-				04072C41243FE9680052D64F /* LoginCollectionViewController.swift */,
-				04072C43243FE96E0052D64F /* FeedCollectionViewController.swift */,
 			);
 			path = "Meme Generator";
 			sourceTree = "<group>";
@@ -410,9 +410,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04072C44243FE96E0052D64F /* FeedCollectionViewController.swift in Sources */,
-				04072C42243FE9680052D64F /* LoginCollectionViewController.swift in Sources */,
 				04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */,
+				043940C5244000AB0000E494 /* LoginViewController.swift in Sources */,
+				043940C92440066B0000E494 /* FeedViewController.swift in Sources */,
 				04C84A912424757E00771B5A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
