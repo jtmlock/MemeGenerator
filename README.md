@@ -42,10 +42,12 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 **Required Must-have Stories**
 
 * User logs in to access previous Memes and preference settings
+-Update Login complete
 * User can upload a picture and lay over with text.
 * User able to like, and favorite memes.
 * Profile pages for each user
 * Settings (Accessibility, General, etc.)
+-Update Settings screen created
 
 **Optional Nice-to-have Stories**
 
@@ -95,6 +97,9 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 
 ### [BONUS] Interactive Prototype
 <img src="http://g.recordit.co/GcLpBNYKa7.gif"><br>
+
+### Gif of Progress
+<img src=><br>
 
 ## Schema
 
