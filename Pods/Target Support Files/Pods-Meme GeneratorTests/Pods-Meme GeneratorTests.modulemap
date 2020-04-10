@@ -1,0 +1,6 @@
+framework module Pods_Meme_GeneratorTests {
+  umbrella header "Pods-Meme GeneratorTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
