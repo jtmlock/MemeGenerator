@@ -123,9 +123,9 @@
         <!--View Controller-->
         <scene sceneID="fLG-wG-9xL">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="f4W-Rs-3vy" sceneMemberID="viewController">
+                <viewController id="f4W-Rs-3vy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ou-qk-tVu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1f-tg-UzK">
@@ -147,9 +147,9 @@
         <!--View Controller-->
         <scene sceneID="Bdw-So-z74">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="1Fr-0c-nIK" sceneMemberID="viewController">
+                <viewController id="1Fr-0c-nIK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fao-o7-aZ5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jyn-N1-p4T">
@@ -171,9 +171,9 @@
         <!--View Controller-->
         <scene sceneID="YXq-Fu-ITP">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Tdj-45-p7T" sceneMemberID="viewController">
+                <viewController id="Tdj-45-p7T" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="piW-6s-qHB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJC-al-Za3">
