@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "MemeGenerator"
-                configuration.server = "http://intense-depths-83816.herokuapp.com/parse"
+                configuration.server = "https://intense-depths-83816.herokuapp.com/parse"
             })
         )
         

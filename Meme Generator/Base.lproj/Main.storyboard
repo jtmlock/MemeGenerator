@@ -68,7 +68,7 @@
                     <connections>
                         <outlet property="passwordField" destination="TaZ-Dv-cCE" id="1Kr-l1-EsT"/>
                         <outlet property="usernameField" destination="Bqh-4r-deY" id="grH-5Z-FEf"/>
-                        <segue destination="GR8-mr-Nzn" kind="presentation" identifier="loginSeque" id="Fdi-Hk-8QG"/>
+                        <segue destination="GR8-mr-Nzn" kind="presentation" identifier="loginSegue" id="Fdi-Hk-8QG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
