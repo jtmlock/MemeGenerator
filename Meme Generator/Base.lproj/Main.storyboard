@@ -88,18 +88,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="Tdj-45-p7T" kind="presentation" id="sC2-ZF-JxH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7M-pZ-RIo">
                                 <rect key="frame" x="112" y="236" width="150" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Generator"/>
+                                <connections>
+                                    <segue destination="f4W-Rs-3vy" kind="presentation" id="v0H-bL-BEb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEc-9V-b7q">
                                 <rect key="frame" x="135" y="357" width="105" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Stories"/>
+                                <connections>
+                                    <segue destination="1Fr-0c-nIK" kind="presentation" id="Mhs-ZU-kWU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -116,7 +125,7 @@
             <objects>
                 <viewController id="f4W-Rs-3vy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ou-qk-tVu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Gj4-ek-5WA"/>
@@ -124,14 +133,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p82-vm-bhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2617" y="-575"/>
+            <point key="canvasLocation" x="2711" y="-676"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Bdw-So-z74">
             <objects>
                 <viewController id="1Fr-0c-nIK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fao-o7-aZ5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="usk-OC-GEa"/>
@@ -139,14 +148,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0j-pu-qqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2617" y="119"/>
+            <point key="canvasLocation" x="2710" y="117"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YXq-Fu-ITP">
             <objects>
                 <viewController id="Tdj-45-p7T" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="piW-6s-qHB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="UyV-Bs-0mv"/>
@@ -154,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsD-c1-yGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2617" y="811"/>
+            <point key="canvasLocation" x="2710" y="882"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d7R-TA-6s6">
