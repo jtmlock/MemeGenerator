@@ -99,7 +99,7 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 <img src="http://g.recordit.co/GcLpBNYKa7.gif"><br>
 
 ### Gif of Progress
-<img src=><br>
+<img src="https://github.com/jtmlock/MemeGenerator/blob/master/MemeGeneratorWalkthrough1.gif"><br>
 
 ## Schema
 
