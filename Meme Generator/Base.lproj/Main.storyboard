@@ -82,6 +82,26 @@
                     <view key="view" contentMode="scaleToFill" id="t0J-af-vQe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tI-WL-LdZ">
+                                <rect key="frame" x="125" y="476" width="124" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Settings"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7M-pZ-RIo">
+                                <rect key="frame" x="112" y="236" width="150" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Generator"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEc-9V-b7q">
+                                <rect key="frame" x="135" y="357" width="105" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Stories"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="BF4-La-gdZ"/>
                     </view>
@@ -89,7 +109,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pz-aX-FNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1510" y="119"/>
+            <point key="canvasLocation" x="1702" y="119"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fLG-wG-9xL">
+            <objects>
+                <viewController id="f4W-Rs-3vy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ou-qk-tVu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gj4-ek-5WA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p82-vm-bhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2617" y="-575"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Bdw-So-z74">
@@ -104,7 +139,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0j-pu-qqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2282" y="118"/>
+            <point key="canvasLocation" x="2617" y="119"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YXq-Fu-ITP">
+            <objects>
+                <viewController id="Tdj-45-p7T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="piW-6s-qHB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UyV-Bs-0mv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsD-c1-yGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2617" y="811"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d7R-TA-6s6">
@@ -122,7 +172,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Oq-XS-6Dz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="118.29085457271366"/>
+            <point key="canvasLocation" x="934" y="118"/>
         </scene>
     </scenes>
 </document>
