@@ -49,6 +49,9 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 * Settings (Accessibility, General, etc.)
 -Update Settings screen created
 
+## User Story Update- 
+* Users are able to open camera from Mobile device of Photo library from simulator
+
 **Optional Nice-to-have Stories**
 
 *  Able to search for friends
