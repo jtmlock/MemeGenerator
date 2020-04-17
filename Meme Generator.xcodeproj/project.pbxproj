@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040DB97424494E94008D458C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DB97324494E94008D458C /* CameraViewController.swift */; };
 		043940C5244000AB0000E494 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C4244000AB0000E494 /* LoginViewController.swift */; };
 		043940C92440066B0000E494 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C82440066A0000E494 /* FeedViewController.swift */; };
 		04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84A8E2424757E00771B5A /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040DB97324494E94008D458C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		043940C4244000AB0000E494 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		043940C82440066A0000E494 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		04C84A8B2424757E00771B5A /* Meme Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meme Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 				04C84A8E2424757E00771B5A /* AppDelegate.swift */,
 				04C84A902424757E00771B5A /* SceneDelegate.swift */,
 				04C84A942424757E00771B5A /* Main.storyboard */,
+				040DB97324494E94008D458C /* CameraViewController.swift */,
 				043940C82440066A0000E494 /* FeedViewController.swift */,
 				043940C4244000AB0000E494 /* LoginViewController.swift */,
 				04C84A972424758300771B5A /* Assets.xcassets */,
@@ -411,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */,
+				040DB97424494E94008D458C /* CameraViewController.swift in Sources */,
 				043940C5244000AB0000E494 /* LoginViewController.swift in Sources */,
 				043940C92440066B0000E494 /* FeedViewController.swift in Sources */,
 				04C84A912424757E00771B5A /* SceneDelegate.swift in Sources */,
