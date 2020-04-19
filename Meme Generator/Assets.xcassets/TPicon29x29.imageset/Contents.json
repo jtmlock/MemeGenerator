@@ -6,10 +6,12 @@
       "scale" : "1x"
     },
     {
+      "filename" : "TPicon80x80.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "TPicon1024x1024.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
