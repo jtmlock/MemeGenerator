@@ -11,8 +11,8 @@ import Parse
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var ligthDark_toggle: UISwitch!  // theme mode toggle btn
-    @IBOutlet var labelLightMode: UIView!           // label text for light
-    @IBOutlet var labelDarkMode: UIView!            // label text for dark
+    @IBOutlet weak var sunImageView: UIImageView!   // sun theme mode image
+    @IBOutlet weak var moonImageView: UIImageView!  // moon theme mode image
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -24,7 +24,6 @@ class LoginViewController: UIViewController {
         // Always update the current UISwitch state base on
         // theme state of the UIState class.
         UIState.updateLightDarkToggle(toggleBtn: ligthDark_toggle)
-        
     }
     
     
@@ -70,11 +69,14 @@ class LoginViewController: UIViewController {
     @IBAction func event_switchLightDarkMode(_ sender: UISwitch) {
         if (sender.isOn) {
             UIState.setSystemThemeMode(darkmode: true)
+            UIState.animatedImages(imageview: self.moonImageView)
         } else {
             UIState.setSystemThemeMode(darkmode: false)
+            UIState.animatedImages(imageview: self.sunImageView)
         }
         
         UIState.overrideUserInterface(viewController: self)
+        
     }
     
     /*
