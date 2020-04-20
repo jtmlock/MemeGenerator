@@ -2,17 +2,50 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "sun-svgrepo-com@1x.png",
+      "filename" : "sun-svgrepo-com-ligthMode@1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "sun-svgrepo-com @2x.png",
+      "filename" : "sun-svgrepo-com-darkMode@1x.png",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "sun-svgrepo-com-lightMode@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "sun-svgrepo-com@3x .png",
+      "filename" : "sun-svgrepo-com-darkMode@2x.png",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "sun-svgrepo-com-lightMode@3x.png",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "sun-svgrepo-com-darkMode@3x.png",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
       "scale" : "3x"
     }
   ],
