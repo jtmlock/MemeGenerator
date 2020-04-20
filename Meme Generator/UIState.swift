@@ -20,9 +20,12 @@ class UIState {
     static func updateLightDarkToggle(toggleBtn: UISwitch) {
         if (_inDarkMode) {
             toggleBtn.isOn = true
-            
+            toggleBtn.onTintColor = UIColor.white
+            toggleBtn.thumbTintColor = UIColor.white
         } else {
             toggleBtn.isOn = false
+            toggleBtn.onTintColor = UIColor.systemGray6
+            toggleBtn.thumbTintColor = UIColor.black
         }
     }
     

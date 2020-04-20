@@ -11,9 +11,12 @@ import Parse
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var ligthDark_toggle: UISwitch!  // theme mode toggle btn
+    @IBOutlet var labelLightMode: UIView!           // label text for light
+    @IBOutlet var labelDarkMode: UIView!            // label text for dark
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
