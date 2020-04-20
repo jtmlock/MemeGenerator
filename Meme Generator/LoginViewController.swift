@@ -10,17 +10,18 @@ import UIKit
 import Parse
 
 class LoginViewController: UIViewController {
-    
-
-
+    @IBOutlet weak var ligthDark_toggle: UISwitch!  // theme mode toggle btn
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Always update the current UISwitch state base on
+        // theme state of the UIState class.
+        UIState.updateLightDarkToggle(toggleBtn: ligthDark_toggle)
+        
     }
     
     
@@ -57,6 +58,20 @@ class LoginViewController: UIViewController {
             }
         }
         
+    }
+    
+    // @note: Eventhandler that will change the system theme base on
+    //          the state of the UISwitch controller.
+    //
+    // @param   sender   The current page (LightDarkMode) UISwitch controller
+    @IBAction func event_switchLightDarkMode(_ sender: UISwitch) {
+        if (sender.isOn) {
+            UIState.setSystemThemeMode(darkmode: true)
+        } else {
+            UIState.setSystemThemeMode(darkmode: false)
+        }
+        
+        UIState.overrideUserInterface(viewController: self)
     }
     
     /*
