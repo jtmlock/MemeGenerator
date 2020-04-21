@@ -278,7 +278,7 @@
                                     <navigationItem title="Title" id="PA5-st-rr0">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="WPo-0g-ehV">
                                             <connections>
-                                                <action selector="onBackFromCameraToGenerator:" destination="5Le-UM-hhJ" id="rO8-Yl-Mnz"/>
+                                                <action selector="onBackFromCameraToGenerator:" destination="5Le-UM-hhJ" id="H75-JQ-caD"/>
                                                 <segue destination="f4W-Rs-3vy" kind="presentation" modalPresentationStyle="fullScreen" id="3Wd-qR-R0P"/>
                                             </connections>
                                         </barButtonItem>
@@ -386,7 +386,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="gaL-dI-Cze"/>
         <segue reference="vqI-Qf-BbI"/>
-        <segue reference="3Wd-qR-R0P"/>
+        <segue reference="54p-Tx-0aS"/>
         <segue reference="IAR-6W-8ol"/>
     </inferredMetricsTieBreakers>
     <resources>

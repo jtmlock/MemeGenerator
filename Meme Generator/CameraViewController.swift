@@ -67,10 +67,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
 
-    @IBAction func onBackFromCamera(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     
     @IBAction func onCameraToAlbum(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
