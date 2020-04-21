@@ -12,13 +12,15 @@ import Parse
 class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var reu_viewLigthDarkTheme: LightDarkThemeView!  // reusable view
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         // Always update the current UISwitch state base on
         // theme state of the UIState class.
-//        UIState.updateLightDarkToggle(toggleBtn: ligthDark_toggle)
+        UIState.updateLightDarkToggle(toggleBtn: reu_viewLigthDarkTheme.ligthDark_toggle)
     }
     
     

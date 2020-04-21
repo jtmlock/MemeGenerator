@@ -63,6 +63,11 @@ class LightDarkThemeView: UIView {
           UIState.animatedImages(imageview: self.sunImageView)
         }
 
-        // UIState.overrideUserInterface(viewController: self)
+        // UIState.overrideUserInterface(viewController: self.parentController!)
+        
+    }
+    
+    static func setRootViewController(viewController: UIViewController) {
+        
     }
 }
