@@ -10,13 +10,8 @@ import UIKit
 import Parse
 
 class LoginViewController: UIViewController {
-    @IBOutlet weak var ligthDark_toggle: UISwitch!  // theme mode toggle btn
-    @IBOutlet weak var sunImageView: UIImageView!   // sun theme mode image
-    @IBOutlet weak var moonImageView: UIImageView!  // moon theme mode image
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
-  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,32 +56,4 @@ class LoginViewController: UIViewController {
         }
         
     }
-    
-    // @note: Eventhandler that will change the system theme base on
-    //          the state of the UISwitch controller.
-    //
-    // @param   sender   The current page (LightDarkMode) UISwitch controller
-  /*  @IBAction func event_switchLightDarkMode(_ sender: UISwitch) {
-        if (sender.isOn) {
-            UIState.setSystemThemeMode(darkmode: true)
-            UIState.animatedImages(imageview: self.moonImageView)
-        } else {
-            UIState.setSystemThemeMode(darkmode: false)
-            UIState.animatedImages(imageview: self.sunImageView)
-        }
-    
-        UIState.overrideUserInterface(viewController: self)
-        
-    }*/
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

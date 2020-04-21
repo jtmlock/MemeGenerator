@@ -28,7 +28,9 @@ class UIState {
             toggleBtn.thumbTintColor = UIColor.black
         }
     }
-    
+    // @note: Function that animates an Imageview
+    //
+    // @param   imageview that will be animated
     static func animatedImages(imageview: UIImageView) {
         UIView.animate(withDuration: 2.0, delay: 0.5, options: .autoreverse, animations: {
             imageview.frame.origin.y += 50;

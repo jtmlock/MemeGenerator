@@ -139,7 +139,6 @@
 				04C84A972424758300771B5A /* Assets.xcassets */,
 				04C84A992424758300771B5A /* LaunchScreen.storyboard */,
 				04C84A9C2424758300771B5A /* Info.plist */,
-				5BFF8544244DCABC0023FF80 /* UIState.swift */,
 			);
 			path = "Meme Generator";
 			sourceTree = "<group>";
@@ -167,6 +166,7 @@
 			children = (
 				5BE78415244F442A0035BD39 /* LightDarkThemeView.swift */,
 				5BE78417244F444F0035BD39 /* LightDarkThemeView.xib */,
+				5BFF8544244DCABC0023FF80 /* UIState.swift */,
 			);
 			path = "Theme Mode";
 			sourceTree = "<group>";

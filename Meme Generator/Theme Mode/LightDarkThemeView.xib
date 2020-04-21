@@ -9,6 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
             <connections>
+                <outlet property="ligthDark_toggle" destination="yNI-jX-NDR" id="fFc-Ff-ubH"/>
+                <outlet property="moonImageView" destination="cz7-yP-5SN" id="H3w-O0-zlV"/>
+                <outlet property="sunImageView" destination="6Kd-0a-W84" id="GHh-e7-EuN"/>
                 <outlet property="view" destination="iN0-l3-epB" id="1sy-Mm-7ZL"/>
             </connections>
         </placeholder>
@@ -21,6 +24,9 @@
                     <rect key="frame" x="91" y="44" width="51" height="27"/>
                     <color key="onTintColor" cocoaTouchSystemColor="darkTextColor"/>
                     <color key="thumbTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <action selector="event_switchLightDarkMode:" destination="-1" eventType="valueChanged" id="EMB-X5-CWj"/>
+                    </connections>
                 </switch>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" restorationIdentifier="light-mode" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="6Kd-0a-W84">
                     <rect key="frame" x="36" y="34" width="47" height="47"/>

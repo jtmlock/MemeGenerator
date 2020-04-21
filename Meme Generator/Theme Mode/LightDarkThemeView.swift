@@ -10,6 +10,9 @@
 import UIKit
 
 class LightDarkThemeView: UIView {
+    @IBOutlet weak var ligthDark_toggle: UISwitch!  // theme mode toggle btn
+    @IBOutlet weak var sunImageView: UIImageView!   // sun theme mode image
+    @IBOutlet weak var moonImageView: UIImageView!  // moon theme mode image
     @IBOutlet var view: UIView!         // reusable view
     let nibName = "LightDarkThemeView"  // view name
     
@@ -46,4 +49,20 @@ class LightDarkThemeView: UIView {
     // "A nib file is a special type of resource file that you use to store the user interfaces of iOS and Mac apps"
     /* src: https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/NibFile.html
     */
+    
+    // @note: Eventhandler that will change the system theme base on
+    //          the state of the UISwitch controller.
+    //
+    // @param   sender   The current page (LightDarkMode) UISwitch controller
+    @IBAction func event_switchLightDarkMode(_ sender: UISwitch) {
+        if (sender.isOn) {
+          UIState.setSystemThemeMode(darkmode: true)
+          UIState.animatedImages(imageview: self.moonImageView)
+        } else {
+          UIState.setSystemThemeMode(darkmode: false)
+          UIState.animatedImages(imageview: self.sunImageView)
+        }
+
+        // UIState.overrideUserInterface(viewController: self)
+    }
 }
