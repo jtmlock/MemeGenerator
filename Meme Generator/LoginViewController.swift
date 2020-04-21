@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
         
         // Always update the current UISwitch state base on
         // theme state of the UIState class.
-        UIState.updateLightDarkToggle(toggleBtn: ligthDark_toggle)
+//        UIState.updateLightDarkToggle(toggleBtn: ligthDark_toggle)
     }
     
     
@@ -66,7 +66,7 @@ class LoginViewController: UIViewController {
     //          the state of the UISwitch controller.
     //
     // @param   sender   The current page (LightDarkMode) UISwitch controller
-    @IBAction func event_switchLightDarkMode(_ sender: UISwitch) {
+  /*  @IBAction func event_switchLightDarkMode(_ sender: UISwitch) {
         if (sender.isOn) {
             UIState.setSystemThemeMode(darkmode: true)
             UIState.animatedImages(imageview: self.moonImageView)
@@ -74,10 +74,10 @@ class LoginViewController: UIViewController {
             UIState.setSystemThemeMode(darkmode: false)
             UIState.animatedImages(imageview: self.sunImageView)
         }
-        
+    
         UIState.overrideUserInterface(viewController: self)
         
-    }
+    }*/
     
     /*
     // MARK: - Navigation
