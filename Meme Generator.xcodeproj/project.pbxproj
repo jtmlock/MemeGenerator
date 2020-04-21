@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		040A7CBB244C4AFD00704161 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7CBA244C4AFD00704161 /* AlbumViewController.swift */; };
+		040A7CBD244EAA0500704161 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7CBC244EAA0500704161 /* SettingsViewController.swift */; };
 		040DB97424494E94008D458C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DB97324494E94008D458C /* CameraViewController.swift */; };
 		043940C5244000AB0000E494 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C4244000AB0000E494 /* LoginViewController.swift */; };
 		043940C92440066B0000E494 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C82440066A0000E494 /* FeedViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		040A7CBA244C4AFD00704161 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		040A7CBC244EAA0500704161 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		040DB97324494E94008D458C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		043940C4244000AB0000E494 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		043940C82440066A0000E494 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				04C84A8E2424757E00771B5A /* AppDelegate.swift */,
 				04C84A902424757E00771B5A /* SceneDelegate.swift */,
 				04C84A942424757E00771B5A /* Main.storyboard */,
+				040A7CBC244EAA0500704161 /* SettingsViewController.swift */,
 				040A7CBA244C4AFD00704161 /* AlbumViewController.swift */,
 				040DB97324494E94008D458C /* CameraViewController.swift */,
 				043940C82440066A0000E494 /* FeedViewController.swift */,
@@ -418,6 +421,7 @@
 			files = (
 				040A7CBB244C4AFD00704161 /* AlbumViewController.swift in Sources */,
 				04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */,
+				040A7CBD244EAA0500704161 /* SettingsViewController.swift in Sources */,
 				040DB97424494E94008D458C /* CameraViewController.swift in Sources */,
 				043940C5244000AB0000E494 /* LoginViewController.swift in Sources */,
 				043940C92440066B0000E494 /* FeedViewController.swift in Sources */,

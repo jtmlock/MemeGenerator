@@ -1,14 +1,14 @@
 //
-//  FeedViewController.swift
+//  SettingsViewController.swift
 //  Meme Generator
 //
-//  Created by Mac on 4/9/20.
+//  Created by Mac on 4/20/20.
 //  Copyright © 2020 Mac. All rights reserved.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
