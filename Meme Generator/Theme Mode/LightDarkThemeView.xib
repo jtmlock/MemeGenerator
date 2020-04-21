@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="189" height="154"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCV-Ml-7pP">
+                    <rect key="frame" x="75" y="59" width="50.5" height="36"/>
+                    <color key="onTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="thumbTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </switch>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" restorationIdentifier="light-mode" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="Kaj-KB-wit">
+                    <rect key="frame" x="20" y="53.5" width="47" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="2e7-1v-UOZ"/>
+                        <constraint firstAttribute="height" constant="47" id="Igw-zg-eKP"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" restorationIdentifier="dark-mode" image="moon" translatesAutoresizingMaskIntoConstraints="NO" id="UVT-PV-BPX">
+                    <rect key="frame" x="131.5" y="53.5" width="47" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="9BM-xo-Ogp"/>
+                        <constraint firstAttribute="width" constant="47" id="MzU-v4-HSG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFx-Ht-FYQ">
+                    <rect key="frame" x="24" y="113" width="39" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB1-Ul-ja3">
+                    <rect key="frame" x="137" y="113" width="36" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="mode" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4J-1J-q0P">
+                    <rect key="frame" x="86" y="39" width="30" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nCV-Ml-7pP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="06q-i3-n2F"/>
+                <constraint firstItem="UVT-PV-BPX" firstAttribute="leading" secondItem="nCV-Ml-7pP" secondAttribute="trailing" constant="8" id="2H4-29-8cp"/>
+                <constraint firstItem="nCV-Ml-7pP" firstAttribute="top" secondItem="U4J-1J-q0P" secondAttribute="bottom" constant="8" id="3Sb-gh-sIs"/>
+                <constraint firstItem="nCV-Ml-7pP" firstAttribute="leading" secondItem="Kaj-KB-wit" secondAttribute="trailing" constant="8" id="7nT-x1-8Rh"/>
+                <constraint firstItem="QB1-Ul-ja3" firstAttribute="leading" secondItem="tFx-Ht-FYQ" secondAttribute="trailing" constant="74" id="AnW-fH-d54"/>
+                <constraint firstItem="Kaj-KB-wit" firstAttribute="centerY" secondItem="nCV-Ml-7pP" secondAttribute="centerY" id="Cyb-Yn-Psg"/>
+                <constraint firstItem="Kaj-KB-wit" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="NST-QA-Ixo"/>
+                <constraint firstItem="UVT-PV-BPX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PWA-xb-SCf"/>
+                <constraint firstItem="U4J-1J-q0P" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="86" id="Rop-Ge-Br3"/>
+                <constraint firstItem="QB1-Ul-ja3" firstAttribute="centerX" secondItem="UVT-PV-BPX" secondAttribute="centerX" id="WCN-Sy-Ex6"/>
+                <constraint firstItem="tFx-Ht-FYQ" firstAttribute="centerX" secondItem="Kaj-KB-wit" secondAttribute="centerX" id="Xh7-L7-aKZ"/>
+                <constraint firstItem="QB1-Ul-ja3" firstAttribute="top" secondItem="UVT-PV-BPX" secondAttribute="bottom" constant="12.5" id="Y6a-bQ-uHS"/>
+                <constraint firstItem="tFx-Ht-FYQ" firstAttribute="top" secondItem="Kaj-KB-wit" secondAttribute="bottom" constant="12.5" id="Z3A-Nx-haN"/>
+                <constraint firstItem="U4J-1J-q0P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="39" id="dA8-0v-NYn"/>
+                <constraint firstItem="QB1-Ul-ja3" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="dux-2c-HQf"/>
+                <constraint firstItem="U4J-1J-q0P" firstAttribute="centerX" secondItem="nCV-Ml-7pP" secondAttribute="centerX" id="gkr-Xw-fTj"/>
+                <constraint firstItem="Kaj-KB-wit" firstAttribute="top" secondItem="UVT-PV-BPX" secondAttribute="top" id="hzM-eU-cus"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-31.159420289855074" y="356.25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="moon" width="87.5" height="87.5"/>
+        <image name="sun" width="87.5" height="87.5"/>
+    </resources>
+</document>
