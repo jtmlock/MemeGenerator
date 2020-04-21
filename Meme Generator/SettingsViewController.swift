@@ -17,7 +17,9 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func onSignOut(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "userLoggedIn")
         self.dismiss(animated: true, completion: nil)
+       
     }
     
     /*
