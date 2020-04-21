@@ -48,6 +48,20 @@ class AlbumViewController: UIViewController, UIImagePickerControllerDelegate, UI
             dismiss(animated: true, completion: nil)
     }
     
+
+    @IBAction func onBackFromAlbum(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func onAlbumToCamera(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onBackFromAlbumToGenerator(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
