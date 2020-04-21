@@ -169,18 +169,25 @@
                                 <rect key="frame" x="36" y="21" width="343" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KoC-2u-z2e" appends="YES" id="1EO-hB-Id7"/>
+                                </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UhN-xf-aPp" userLabel="photoCommentField">
-                                <rect key="frame" x="36" y="340" width="343" height="34"/>
+                                <rect key="frame" x="36" y="350" width="343" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="albumCommentField:" destination="p0A-YJ-lOp" eventType="editingDidEnd" id="szV-uT-TRK"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvn-ew-eLq" userLabel="photoSubmit">
-                                <rect key="frame" x="36" y="382" width="343" height="30"/>
+                                <rect key="frame" x="36" y="392" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
+                                    <action selector="onAlbumSubmit:" destination="p0A-YJ-lOp" eventType="touchUpInside" id="wDG-On-Cg0"/>
                                     <action selector="onSubmitButton:" destination="5Le-UM-hhJ" eventType="touchUpInside" id="oRv-hw-JFQ"/>
                                 </connections>
                             </button>
@@ -188,8 +195,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="xBM-mh-B80"/>
                     </view>
+                    <connections>
+                        <outlet property="albumView" destination="kol-dV-p3b" id="9Jh-k7-Orz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tue-ce-RNN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KoC-2u-z2e">
+                    <connections>
+                        <action selector="onAlbumButton:" destination="p0A-YJ-lOp" id="ohf-EG-2XU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3429" y="-1374"/>
         </scene>
@@ -210,13 +225,13 @@
                                 </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cxc-TY-JME" userLabel="cameraCommentField">
-                                <rect key="frame" x="36" y="348" width="343" height="34"/>
+                                <rect key="frame" x="36" y="350" width="343" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyQ-hI-hvq" userLabel="cameraSubmit">
-                                <rect key="frame" x="36" y="390" width="343" height="30"/>
+                                <rect key="frame" x="36" y="392" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>

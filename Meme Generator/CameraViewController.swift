@@ -23,17 +23,14 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBAction func onSubmitButton(_ sender: Any) {
     }
 
-    
     @IBAction func onCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.allowsEditing = true
         
-        
-        // this is where you we could choose between photo or album - Parstagram video 4 - button for both- 7:25 into the video
         if UIImagePickerController.isSourceTypeAvailable(.camera){
             picker.sourceType = .camera
-        }else{
+        } else {
             picker.sourceType = .photoLibrary
         }
         
