@@ -16,7 +16,7 @@ class generatorViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onBack(_ sender: Any) {
+    @IBAction func onBackFromGeneratorToHome(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     

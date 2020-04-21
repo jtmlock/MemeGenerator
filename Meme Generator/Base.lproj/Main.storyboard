@@ -143,7 +143,8 @@
                                     <navigationItem title="Generator" id="aDY-1n-2iN">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="oX0-8o-EjH">
                                             <connections>
-                                                <action selector="onBack:" destination="f4W-Rs-3vy" id="6kG-wS-F5Z"/>
+                                                <action selector="onBackFromGeneratorToHome:" destination="f4W-Rs-3vy" id="I33-md-AnG"/>
+                                                <segue destination="VeO-uN-wXo" kind="presentation" modalPresentationStyle="fullScreen" id="pP5-cX-zI1"/>
                                             </connections>
                                         </barButtonItem>
                                         <rightBarButtonItems>
@@ -161,6 +162,51 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zqf-wo-zSg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="460" id="ons-lG-9Hl">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="460"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ons-lG-9Hl" id="KSG-IS-a7Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="460"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timmy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrh-kG-R3b">
+                                                    <rect key="frame" x="7.9999999999999964" y="431" width="51.666666666666657" height="20.333333333333314"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wow Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6L-3f-U9r">
+                                                    <rect key="frame" x="306.66666666666669" y="431.66666666666674" width="95.333333333333314" height="20.333333333333314"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Ll-Kb-vcY">
+                                                    <rect key="frame" x="28" y="19" width="378" height="404"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="9Ll-Kb-vcY" secondAttribute="height" multiplier="189:202" id="qBc-m5-KAy"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Jrh-kG-R3b" firstAttribute="leading" secondItem="KSG-IS-a7Q" secondAttribute="leading" constant="8" id="6J4-co-kXf"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Jrh-kG-R3b" secondAttribute="bottom" constant="8" id="D9o-d6-riW"/>
+                                                <constraint firstItem="9Ll-Kb-vcY" firstAttribute="leading" secondItem="KSG-IS-a7Q" secondAttribute="leadingMargin" constant="8" id="Dmb-u0-zLR"/>
+                                                <constraint firstItem="k6L-3f-U9r" firstAttribute="trailing" secondItem="KSG-IS-a7Q" secondAttribute="trailingMargin" constant="8" id="IWC-NG-Vmu"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="k6L-3f-U9r" secondAttribute="bottom" constant="8" id="TjR-EM-4vl"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Ll-Kb-vcY" secondAttribute="trailing" constant="8" id="bxf-hX-OQW"/>
+                                                <constraint firstItem="Jrh-kG-R3b" firstAttribute="top" secondItem="9Ll-Kb-vcY" secondAttribute="bottom" constant="8" id="fLh-9A-t5j"/>
+                                                <constraint firstItem="9Ll-Kb-vcY" firstAttribute="top" secondItem="KSG-IS-a7Q" secondAttribute="topMargin" constant="8" id="j7K-Q2-IYi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Gj4-ek-5WA"/>
@@ -168,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p82-vm-bhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2652" y="-1021"/>
+            <point key="canvasLocation" x="2650.7246376811595" y="-1021.4673913043479"/>
         </scene>
         <!--Album View Controller-->
         <scene sceneID="a5P-iX-sMT">
@@ -384,9 +430,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gaL-dI-Cze"/>
-        <segue reference="vqI-Qf-BbI"/>
+        <segue reference="3O3-od-RkS"/>
+        <segue reference="841-CD-PN5"/>
         <segue reference="54p-Tx-0aS"/>
+        <segue reference="pP5-cX-zI1"/>
         <segue reference="IAR-6W-8ol"/>
     </inferredMetricsTieBreakers>
     <resources>

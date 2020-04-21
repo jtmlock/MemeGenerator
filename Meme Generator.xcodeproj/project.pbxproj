@@ -10,6 +10,7 @@
 		040A7CBB244C4AFD00704161 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7CBA244C4AFD00704161 /* AlbumViewController.swift */; };
 		040A7CBD244EAA0500704161 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7CBC244EAA0500704161 /* SettingsViewController.swift */; };
 		040A7CBF244F515000704161 /* generatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7CBE244F515000704161 /* generatorViewController.swift */; };
+		040A7CC1244F789A00704161 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7CC0244F789A00704161 /* PostCell.swift */; };
 		040DB97424494E94008D458C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DB97324494E94008D458C /* CameraViewController.swift */; };
 		043940C5244000AB0000E494 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C4244000AB0000E494 /* LoginViewController.swift */; };
 		043940C92440066B0000E494 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C82440066A0000E494 /* FeedViewController.swift */; };
@@ -46,6 +47,7 @@
 		040A7CBA244C4AFD00704161 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		040A7CBC244EAA0500704161 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		040A7CBE244F515000704161 /* generatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generatorViewController.swift; sourceTree = "<group>"; };
+		040A7CC0244F789A00704161 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		040DB97324494E94008D458C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		043940C4244000AB0000E494 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		043940C82440066A0000E494 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				04C84A972424758300771B5A /* Assets.xcassets */,
 				04C84A992424758300771B5A /* LaunchScreen.storyboard */,
 				04C84A9C2424758300771B5A /* Info.plist */,
+				040A7CC0244F789A00704161 /* PostCell.swift */,
 			);
 			path = "Meme Generator";
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				040A7CBD244EAA0500704161 /* SettingsViewController.swift in Sources */,
 				040DB97424494E94008D458C /* CameraViewController.swift in Sources */,
 				043940C5244000AB0000E494 /* LoginViewController.swift in Sources */,
+				040A7CC1244F789A00704161 /* PostCell.swift in Sources */,
 				043940C92440066B0000E494 /* FeedViewController.swift in Sources */,
 				040A7CBF244F515000704161 /* generatorViewController.swift in Sources */,
 				04C84A912424757E00771B5A /* SceneDelegate.swift in Sources */,
