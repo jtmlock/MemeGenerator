@@ -180,8 +180,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wow Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6L-3f-U9r">
-                                                    <rect key="frame" x="306.66666666666669" y="431.66666666666674" width="95.333333333333314" height="20.333333333333314"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wow Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6L-3f-U9r">
+                                                    <rect key="frame" x="306.66666666666669" y="431" width="95.333333333333314" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -198,6 +198,7 @@
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Jrh-kG-R3b" secondAttribute="bottom" constant="8" id="D9o-d6-riW"/>
                                                 <constraint firstItem="9Ll-Kb-vcY" firstAttribute="leading" secondItem="KSG-IS-a7Q" secondAttribute="leadingMargin" constant="8" id="Dmb-u0-zLR"/>
                                                 <constraint firstItem="k6L-3f-U9r" firstAttribute="trailing" secondItem="KSG-IS-a7Q" secondAttribute="trailingMargin" constant="8" id="IWC-NG-Vmu"/>
+                                                <constraint firstItem="k6L-3f-U9r" firstAttribute="top" secondItem="9Ll-Kb-vcY" secondAttribute="bottom" constant="8" id="Ksd-Xg-iYc"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="k6L-3f-U9r" secondAttribute="bottom" constant="8" id="TjR-EM-4vl"/>
                                                 <constraint firstAttribute="trailing" secondItem="9Ll-Kb-vcY" secondAttribute="trailing" constant="8" id="bxf-hX-OQW"/>
                                                 <constraint firstItem="Jrh-kG-R3b" firstAttribute="top" secondItem="9Ll-Kb-vcY" secondAttribute="bottom" constant="8" id="fLh-9A-t5j"/>
