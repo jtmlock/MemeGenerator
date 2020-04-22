@@ -167,7 +167,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="460" id="ons-lG-9Hl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="460" id="ons-lG-9Hl" customClass="PostCell" customModule="Meme_Generator" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="460"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ons-lG-9Hl" id="KSG-IS-a7Q">
@@ -205,6 +205,11 @@
                                                 <constraint firstItem="9Ll-Kb-vcY" firstAttribute="top" secondItem="KSG-IS-a7Q" secondAttribute="topMargin" constant="8" id="j7K-Q2-IYi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="k6L-3f-U9r" id="OxZ-c6-v5a"/>
+                                            <outlet property="photoView" destination="9Ll-Kb-vcY" id="zH5-WD-FRd"/>
+                                            <outlet property="usernameLabel" destination="Jrh-kG-R3b" id="cz0-9Q-E5A"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -212,6 +217,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Gj4-ek-5WA"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Zqf-wo-zSg" id="pYN-7c-T9p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p82-vm-bhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
