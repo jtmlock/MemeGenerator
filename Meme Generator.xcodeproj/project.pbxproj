@@ -22,6 +22,7 @@
 		4D617207398AC1C7D58804E2 /* Pods_Meme_Generator_Meme_GeneratorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FDC87155332F03C84EBD4F /* Pods_Meme_Generator_Meme_GeneratorUITests.framework */; };
 		5BE78416244F442A0035BD39 /* LightDarkThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE78415244F442A0035BD39 /* LightDarkThemeView.swift */; };
 		5BE78418244F444F0035BD39 /* LightDarkThemeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE78417244F444F0035BD39 /* LightDarkThemeView.xib */; };
+		5BF3B7382451AD840081353F /* UIAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3B7372451AD840081353F /* UIAnimation.swift */; };
 		5BFF8545244DCABC0023FF80 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFF8544244DCABC0023FF80 /* UIState.swift */; };
 		61E766A0F591E34E835A1E99 /* Pods_Meme_GeneratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E87A994B57F9225D04AD7F7 /* Pods_Meme_GeneratorTests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		43BCC0A3DA8F586070531D83 /* Pods-Meme Generator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meme Generator.release.xcconfig"; path = "Target Support Files/Pods-Meme Generator/Pods-Meme Generator.release.xcconfig"; sourceTree = "<group>"; };
 		5BE78415244F442A0035BD39 /* LightDarkThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightDarkThemeView.swift; sourceTree = "<group>"; };
 		5BE78417244F444F0035BD39 /* LightDarkThemeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightDarkThemeView.xib; sourceTree = "<group>"; };
+		5BF3B7372451AD840081353F /* UIAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimation.swift; sourceTree = "<group>"; };
 		5BFF8544244DCABC0023FF80 /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
 		5E87A994B57F9225D04AD7F7 /* Pods_Meme_GeneratorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meme_GeneratorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FDC87155332F03C84EBD4F /* Pods_Meme_Generator_Meme_GeneratorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meme_Generator_Meme_GeneratorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +169,7 @@
 				5BE78415244F442A0035BD39 /* LightDarkThemeView.swift */,
 				5BE78417244F444F0035BD39 /* LightDarkThemeView.xib */,
 				5BFF8544244DCABC0023FF80 /* UIState.swift */,
+				5BF3B7372451AD840081353F /* UIAnimation.swift */,
 			);
 			path = "Theme Mode";
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				040A7CBB244C4AFD00704161 /* AlbumViewController.swift in Sources */,
+				5BF3B7382451AD840081353F /* UIAnimation.swift in Sources */,
 				04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */,
 				040DB97424494E94008D458C /* CameraViewController.swift in Sources */,
 				5BE78416244F442A0035BD39 /* LightDarkThemeView.swift in Sources */,

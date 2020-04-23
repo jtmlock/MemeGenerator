@@ -20,7 +20,7 @@ class UIState {
     static func updateLightDarkToggle(toggleBtn: UISwitch) {
         if (_inDarkMode) {
             toggleBtn.isOn = true
-            toggleBtn.onTintColor = UIColor.white
+            toggleBtn.onTintColor = UIColor.systemGray6
             toggleBtn.thumbTintColor = UIColor.white
         } else {
             toggleBtn.isOn = false
@@ -28,19 +28,6 @@ class UIState {
             toggleBtn.thumbTintColor = UIColor.black
         }
     }
-    // @note: Function that animates an Imageview
-    //
-    // @param   imageview that will be animated
-    static func animatedImages(imageview: UIImageView) {
-        UIView.animate(withDuration: 2.0, delay: 0.5, options: .autoreverse, animations: {
-            imageview.frame.origin.y += 50;
-        })
-        /*
-        UIView.animate(withDuration: 2, animations: { imageview.frame.origin.y -= 200}) {
-            _ in UIView.animateKeyframes(withDuration: 2, delay: 0.25, options: [autoreverse, .repeat], animations: {imageview.frame.origin.y += 200}, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
-        }*/
-    }
-    
     
     // @note: Function update the theme state base one the passed boolean
     // value

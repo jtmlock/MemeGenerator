@@ -50,19 +50,21 @@ class LightDarkThemeView: UIView {
     /* src: https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/NibFile.html
     */
     
-    //---------------------------------------------------------------------------ß
+    //---------------------------------------------------------------------------
     // @note: Eventhandler that will change the system theme base on
     //          the state of the UISwitch controller.
     //
     // @param   sender   The current page (LightDarkMode) UISwitch controller
     @IBAction func event_switchLightDarkMode(_ sender: UISwitch) {
+        
         if (sender.isOn) {
-          UIState.setSystemThemeMode(darkmode: true)
-          UIState.animatedImages(imageview: self.moonImageView)
+            UIState.setSystemThemeMode(darkmode: true)
+            self.animationProcess(imageview: self.moonImageView)
         } else {
-          UIState.setSystemThemeMode(darkmode: false)
-          UIState.animatedImages(imageview: self.sunImageView)
+            UIState.setSystemThemeMode(darkmode: false)
+            self.animationProcess(imageview: self.sunImageView)
         }
+        
         // find the parent UIViewController
         let parentController = findParentviewController(forView: self)
         
@@ -73,6 +75,36 @@ class LightDarkThemeView: UIView {
             // also force the reusable view to use system backgroun
             self.view.backgroundColor = UIColor.systemBackground
         }
+        
+        // Always update the current UISwitch state base on
+        // theme state of the UIState class.
+        UIState.updateLightDarkToggle(toggleBtn: ligthDark_toggle)
+    }
+    
+    // official documentation
+    /* src: https://developer.apple.com/documentation/swift/dictionary */
+    
+    // @note Function that encapsulate the animation process.
+    //
+    // @param   the imageview that will be process
+    private func animationProcess(imageview : UIImageView) {
+        // Key Strings
+        let ASC = "ascending"
+        let DESC = "descending"
+        
+        // Dictionary of animations paramerter [struct]
+        let animation = [ASC: AnimateParams(duration: 0.3, delay: 0, options: []),
+                         DESC: AnimateParams(duration: 0.3, delay: 0, options: [])]
+        
+        // Dictionary of Coordinates [struct]
+        let coordinates = [ASC: Coordinates(xcoord: 0, ycoord: 25),
+                           DESC: Coordinates(xcoord: 0, ycoord: -10)]
+        
+        UIAnimation.animatedImages(imageview: imageview,
+                                   params: animation[ASC]!, coord: coordinates[ASC]!)
+        
+        UIAnimation.animatedImages(imageview: imageview,
+                                   params: animation[DESC]!, coord: coordinates[DESC]!)
     }
     /*
      src:
@@ -93,4 +125,6 @@ class LightDarkThemeView: UIView {
 
         return nil
     }
+    
+    
 }

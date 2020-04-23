@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="225" height="115"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-jX-NDR">
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-jX-NDR">
                     <rect key="frame" x="91" y="44" width="51" height="27"/>
                     <color key="onTintColor" cocoaTouchSystemColor="darkTextColor"/>
                     <color key="thumbTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
