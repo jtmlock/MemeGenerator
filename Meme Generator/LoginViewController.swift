@@ -12,12 +12,10 @@ import Parse
 class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var reu_viewLigthDarkTheme: LightDarkThemeView!  // reusable view
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     
     @IBAction func onSignIn(_ sender: Any) {
         let username = usernameField.text!
