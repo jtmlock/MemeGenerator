@@ -10,21 +10,13 @@ import UIKit
 
 class AlbumViewController: UIViewController {
 
+    @IBOutlet weak var reu_viewLightDarkTheme: LightDarkThemeView!  // reusable view
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Always update the current UISwitch state base on
+        // theme state of the UIState class.
+        reu_viewLightDarkTheme.updateLightDarkToggle()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

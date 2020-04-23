@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pepe" translatesAutoresizingMaskIntoConstraints="NO" id="GDJ-ty-pOQ">
-                                <rect key="frame" x="87" y="113" width="240" height="250"/>
+                                <rect key="frame" x="87" y="113" width="240" height="250.00000000000023"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqn-lJ-dyU">
                                 <rect key="frame" x="87" y="479" width="240" height="30"/>
@@ -213,6 +213,7 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCr-Xh-maI" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
                                 <rect key="frame" x="189" y="601" width="225" height="115"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="qU2-1k-68d"/>
                                     <constraint firstAttribute="height" constant="115" id="x2i-tA-Ees"/>
@@ -258,10 +259,24 @@
                                     <action selector="onSubmitButton:" destination="5Le-UM-hhJ" eventType="touchUpInside" id="oRv-hw-JFQ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tl-sV-duc" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
+                                <rect key="frame" x="189" y="601" width="225" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="c52-c9-hA1"/>
+                                    <constraint firstAttribute="width" constant="225" id="jtH-BS-ARa"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0tl-sV-duc" firstAttribute="bottom" secondItem="xBM-mh-B80" secondAttribute="bottom" id="3np-iO-ppB"/>
+                            <constraint firstItem="0tl-sV-duc" firstAttribute="trailing" secondItem="xBM-mh-B80" secondAttribute="trailing" id="qa5-wu-RjT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xBM-mh-B80"/>
                     </view>
+                    <connections>
+                        <outlet property="reu_viewLightDarkTheme" destination="0tl-sV-duc" id="WFL-eo-utD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tue-ce-RNN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -315,6 +330,7 @@
                     <connections>
                         <outlet property="commentField" destination="Cxc-TY-JME" id="iUb-5j-dbi"/>
                         <outlet property="imageView" destination="nyV-lr-wMF" id="pp7-Zf-PNF"/>
+                        <outlet property="reu_viewLightDarkTheme" destination="3wA-P0-gPi" id="X9s-Df-tYP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahC-o0-wk5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -343,6 +359,7 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAc-y6-jrG" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
                                 <rect key="frame" x="189" y="601" width="225" height="115"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="4v3-1G-upj"/>
                                     <constraint firstAttribute="height" constant="115" id="lJS-MF-hxO"/>
@@ -378,6 +395,7 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4x-3O-iqW" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
                                 <rect key="frame" x="189" y="601" width="225" height="115"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="9DQ-tq-pxA"/>
                                     <constraint firstAttribute="width" constant="225" id="Ilw-AS-1yv"/>

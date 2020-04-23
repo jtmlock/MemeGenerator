@@ -16,7 +16,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         // Always update the current UISwitch state base on
         // theme state of the UIState class.

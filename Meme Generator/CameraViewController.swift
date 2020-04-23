@@ -14,10 +14,14 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var commentField: UITextField!
     
+    @IBOutlet weak var reu_viewLightDarkTheme: LightDarkThemeView!  // reusable view
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Always update the current UISwitch state base on
+        // theme state of the UIState class.
+        reu_viewLightDarkTheme.updateLightDarkToggle()
     }
     
     @IBAction func onSubmitButton(_ sender: Any) {
