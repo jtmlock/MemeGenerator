@@ -29,7 +29,7 @@ class LightDarkThemeView: UIView {
 
     // @note: A closure of the steps need to initialize the reusable view.
     //          and add the subview.
-    func commonInit() {
+    private func commonInit() {
         guard let view =
             loadViewFromNib()
             else {
@@ -42,7 +42,7 @@ class LightDarkThemeView: UIView {
     // @note: Function returns the actual view with the nib
     //
     // @return   the subview
-    func loadViewFromNib() -> UIView? {
+    private func loadViewFromNib() -> UIView? {
         let nib = UINib(nibName: nibName, bundle: nil)
         return nib.instantiate(withOwner: self, options: nil).first as? UIView
     }
@@ -50,6 +50,7 @@ class LightDarkThemeView: UIView {
     /* src: https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/NibFile.html
     */
     
+    //---------------------------------------------------------------------------ß
     // @note: Eventhandler that will change the system theme base on
     //          the state of the UISwitch controller.
     //
@@ -62,12 +63,34 @@ class LightDarkThemeView: UIView {
           UIState.setSystemThemeMode(darkmode: false)
           UIState.animatedImages(imageview: self.sunImageView)
         }
-
-        // UIState.overrideUserInterface(viewController: self.parentController!)
+        // find the parent UIViewController
+        let parentController = findParentviewController(forView: self)
         
+        if parentController != nil {
+            // for the parent UIViewController
+            UIState.overrideUserInterface(viewController: parentController!)
+            
+            //UIState.overrideUserInterface(viewController: self.!)
+            
+        }
     }
-    
-    static func setRootViewController(viewController: UIViewController) {
-        
+    /*
+     src:
+     https://codereview.stackexchange.com/questions/143440/accessing-a-uiviews-parent-uiviewcontroller-using-the-uiresponder-chain     */
+    // @note: Function finds the current view (parent) UIViewController.
+    // @pßaram      view     the current view.
+    //
+    // @return      The (parent) [UIViewController] if found OR [nil] if not found
+    private func findParentviewController(forView view: UIView) -> UIViewController? {
+        var responder: UIResponder? = view
+
+        repeat {
+            responder = responder?.next
+            if let vc = responder as? UIViewController {
+                return vc
+            }
+        } while responder != nil
+
+        return nil
     }
 }
