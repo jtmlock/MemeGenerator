@@ -70,8 +70,8 @@ class LightDarkThemeView: UIView {
             // for the parent UIViewController
             UIState.overrideUserInterface(viewController: parentController!)
             
-            //UIState.overrideUserInterface(viewController: self.!)
-            
+            // also force the reusable view to use system backgroun
+            self.view.backgroundColor = UIColor.systemBackground
         }
     }
     /*
