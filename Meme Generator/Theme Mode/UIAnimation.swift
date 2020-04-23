@@ -10,58 +10,44 @@
 import Foundation
 import UIKit
 
-// An container with the animate function paramaters
-struct AnimateParams {
-    var duration: TimeInterval
-    var delay : TimeInterval
-    var options : UIView.AnimationOptions = []
-    
-    init(duration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions ) {
-        self.duration = duration
-        self.delay = delay
-        self.options = options
-    }
-}
-
-// An container with x and y for coordinates
-struct Coordinates {
-    var x: CGFloat
-    var y: CGFloat
-    
-    init(xcoord: CGFloat, ycoord: CGFloat) {
-        self.x = xcoord
-        self.y = ycoord
-    }
-}
-
-// official documentation
-/* src: https://developer.apple.com/documentation/swift/dictionary
-    src: https://docs.swift.org/swift-book/LanguageGuide/Initialization.html
- */
-
 class UIAnimation {
         // @note: Function that animates an Imageview
         //
         // @param   imageview that will be animated
-        // @param   params      An container with the animate function paramaters
-        // @param   coord       An container with x and y for coordinates
-        //
-        // @return      The state of the function completion. true -> complete,
-        //                                                    false -> incomplete
-        static func animatedImages(imageview: UIImageView, params: AnimateParams, coord: Coordinates) -> Bool {
-            var completed = false       // flag animation being completed
+        static func animatedImages(imageview: UIImageView) {
+            let currentYCoordinate: CGFloat = 34
+            let DELAY : TimeInterval = 0
+            let MAX_DURATION : TimeInterval = 1.0
+            let FRAME_PNT : [TimeInterval] = [0.0, 0.2, 0.4, 0.8]
+            let TRANSACTION_PNT : [CGFloat] = [10, 20]
             
-            // Animation process
-            UIView.animate(withDuration: params.duration, delay: params.delay, options: params.options, animations: {
+            UIView.animateKeyframes(withDuration: MAX_DURATION, delay: DELAY, options: [], animations: {
+                // Keyframe 1
+                UIView.addKeyframe(withRelativeStartTime: FRAME_PNT[0], relativeDuration: FRAME_PNT[1],
+                animations: {
+                        // change location
+                        imageview.frame.origin.y += TRANSACTION_PNT[0]
+                })
+                
+                // Keyframe 2
+                UIView.addKeyframe(withRelativeStartTime: FRAME_PNT[1], relativeDuration: FRAME_PNT[2],
+                animations: {
+                        // change location
+                        imageview.frame.origin.y -= TRANSACTION_PNT[1]
+                    })
+                
+                // Keyframe 3
+                UIView.addKeyframe(withRelativeStartTime: FRAME_PNT[2], relativeDuration: FRAME_PNT[3],
+                animations: {
                 // change location
-                imageview.frame.origin.y = coord.y
-            }, completion: {(finished: Bool) in
-                completed = finished
-            })
-            return completed
+                    imageview.frame.origin.y = currentYCoordinate
+                })
+            },  completion: nil)
        }
 }
 
 /*
  official documentation
- src: https://developer.apple.com/documentation/uikit/uiview/1622451-animate */
+ src: https://developer.apple.com/documentation/uikit/uiview/1622451-animate
+ src: https://developer.apple.com/documentation/uikit/uiview/1622552-animatekeyframes/
+ */

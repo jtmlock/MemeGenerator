@@ -59,10 +59,10 @@ class LightDarkThemeView: UIView {
         
         if (sender.isOn) {
             UIState.setSystemThemeMode(darkmode: true)
-            self.animationProcess(imageview: self.moonImageView)
+            UIAnimation.animatedImages(imageview: self.moonImageView)
         } else {
             UIState.setSystemThemeMode(darkmode: false)
-            self.animationProcess(imageview: self.sunImageView)
+            UIAnimation.animatedImages(imageview: self.sunImageView)
         }
         
         // find the parent UIViewController
@@ -81,31 +81,6 @@ class LightDarkThemeView: UIView {
         UIState.updateLightDarkToggle(toggleBtn: ligthDark_toggle)
     }
     
-    // official documentation
-    /* src: https://developer.apple.com/documentation/swift/dictionary */
-    
-    // @note Function that encapsulate the animation process.
-    //
-    // @param   the imageview that will be process
-    private func animationProcess(imageview : UIImageView) {
-        // Key Strings
-        let ASC = "ascending"
-        let DESC = "descending"
-        
-        // Dictionary of animations paramerter [struct]
-        let animation = [ASC: AnimateParams(duration: 0.3, delay: 0, options: []),
-                         DESC: AnimateParams(duration: 0.3, delay: 0, options: [])]
-        
-        // Dictionary of Coordinates [struct]
-        let coordinates = [ASC: Coordinates(xcoord: 0, ycoord: 25),
-                           DESC: Coordinates(xcoord: 0, ycoord: -10)]
-        
-        UIAnimation.animatedImages(imageview: imageview,
-                                   params: animation[ASC]!, coord: coordinates[ASC]!)
-        
-        UIAnimation.animatedImages(imageview: imageview,
-                                   params: animation[DESC]!, coord: coordinates[DESC]!)
-    }
     /*
      src:
      https://codereview.stackexchange.com/questions/143440/accessing-a-uiviews-parent-uiviewcontroller-using-the-uiresponder-chain     */
