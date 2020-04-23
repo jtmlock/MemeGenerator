@@ -35,16 +35,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twr-6F-vJo">
-                                <rect key="frame" x="87" y="594" width="75" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="Bbg-JP-fEz"/>
-                                </constraints>
-                                <state key="normal" title="Sign In"/>
-                                <connections>
-                                    <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTE-TH-zqN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enC-0Q-64i">
                                 <rect key="frame" x="251" y="594" width="76" height="30"/>
                                 <state key="normal" title="Sign Up"/>
@@ -69,30 +59,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="us7-k9-2ng" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twr-6F-vJo">
+                                <rect key="frame" x="87" y="594" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Bbg-JP-fEz"/>
+                                </constraints>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTE-TH-zqN"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGe-6q-99T" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
                                 <rect key="frame" x="189" y="621" width="225" height="115"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGe-6q-99T" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="225" height="115"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </view>
-                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="JgL-LK-Tig"/>
+                                    <constraint firstAttribute="height" constant="115" id="iQG-wi-qEt"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wqn-lJ-dyU" firstAttribute="trailing" secondItem="TaZ-Dv-cCE" secondAttribute="trailing" id="69Y-4X-O5X"/>
                             <constraint firstItem="GDJ-ty-pOQ" firstAttribute="trailing" secondItem="K3y-Et-rGb" secondAttribute="trailing" id="BY3-Qd-Ojz"/>
-                            <constraint firstItem="us7-k9-2ng" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="E62-cH-JGN"/>
-                            <constraint firstItem="us7-k9-2ng" firstAttribute="top" secondItem="TaZ-Dv-cCE" secondAttribute="bottom" constant="70" id="FEx-me-9Nm"/>
                             <constraint firstItem="wqn-lJ-dyU" firstAttribute="top" secondItem="Bqh-4r-deY" secondAttribute="bottom" constant="8" id="GXV-aV-W1D"/>
                             <constraint firstItem="TaZ-Dv-cCE" firstAttribute="top" secondItem="wqn-lJ-dyU" secondAttribute="bottom" constant="8" id="GsE-4T-Cle"/>
                             <constraint firstItem="GDJ-ty-pOQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HzU-jv-3ty"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="twr-6F-vJo" secondAttribute="bottom" constant="112" id="Icz-lP-A2R"/>
-                            <constraint firstItem="us7-k9-2ng" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="189" id="KFS-py-kXR"/>
+                            <constraint firstItem="hGe-6q-99T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OcC-8B-Z0Z"/>
                             <constraint firstItem="enC-0Q-64i" firstAttribute="leading" secondItem="twr-6F-vJo" secondAttribute="trailing" constant="89" id="QVX-VD-QJN"/>
+                            <constraint firstItem="hGe-6q-99T" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qhd-As-wH7"/>
                             <constraint firstItem="TaZ-Dv-cCE" firstAttribute="leading" secondItem="twr-6F-vJo" secondAttribute="leading" id="QqK-lA-pEY"/>
-                            <constraint firstItem="us7-k9-2ng" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VCr-ee-hjd"/>
                             <constraint firstItem="GDJ-ty-pOQ" firstAttribute="leading" secondItem="K3y-Et-rGb" secondAttribute="leading" id="XHT-aD-Xrz"/>
                             <constraint firstItem="K3y-Et-rGb" firstAttribute="top" secondItem="GDJ-ty-pOQ" secondAttribute="bottom" constant="36.000000000000227" id="eUh-gV-K3D"/>
                             <constraint firstItem="K3y-Et-rGb" firstAttribute="trailing" secondItem="Bqh-4r-deY" secondAttribute="trailing" id="eXw-RP-YgI"/>
@@ -106,7 +102,6 @@
                             <constraint firstItem="wqn-lJ-dyU" firstAttribute="leading" secondItem="TaZ-Dv-cCE" secondAttribute="leading" id="uCg-d7-CB8"/>
                             <constraint firstItem="Bqh-4r-deY" firstAttribute="top" secondItem="K3y-Et-rGb" secondAttribute="bottom" constant="8" id="utk-D4-ETc"/>
                             <constraint firstItem="twr-6F-vJo" firstAttribute="top" secondItem="TaZ-Dv-cCE" secondAttribute="bottom" constant="43" id="wsY-Hs-rJT"/>
-                            <constraint firstItem="us7-k9-2ng" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wxR-3T-HW5"/>
                             <constraint firstItem="Bqh-4r-deY" firstAttribute="leading" secondItem="wqn-lJ-dyU" secondAttribute="leading" id="xXQ-Qv-wGw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -158,14 +153,16 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNY-SH-I6c" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
                                 <rect key="frame" x="189" y="621" width="225" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="9VP-mJ-yiB"/>
+                                    <constraint firstAttribute="height" constant="115" id="Vew-ss-OvG"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qNY-SH-I6c" firstAttribute="top" secondItem="t0J-af-vQe" secondAttribute="top" constant="621" id="Bc8-9o-N73"/>
-                            <constraint firstItem="qNY-SH-I6c" firstAttribute="bottom" secondItem="BF4-La-gdZ" secondAttribute="bottom" id="K3H-Ac-FE3"/>
-                            <constraint firstItem="qNY-SH-I6c" firstAttribute="leading" secondItem="BF4-La-gdZ" secondAttribute="leading" constant="189" id="dw0-52-fek"/>
-                            <constraint firstItem="qNY-SH-I6c" firstAttribute="trailing" secondItem="BF4-La-gdZ" secondAttribute="trailing" id="oD8-mu-4xq"/>
+                            <constraint firstItem="qNY-SH-I6c" firstAttribute="trailing" secondItem="BF4-La-gdZ" secondAttribute="trailing" id="7C5-WK-wp4"/>
+                            <constraint firstItem="qNY-SH-I6c" firstAttribute="bottom" secondItem="BF4-La-gdZ" secondAttribute="bottom" id="W1u-mC-wnd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BF4-La-gdZ"/>
                     </view>
@@ -190,8 +187,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1f-tg-UzK">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1f-tg-UzK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Generator" id="aDY-1n-2iN">
                                         <rightBarButtonItems>
@@ -211,15 +209,16 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCr-Xh-maI" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
                                 <rect key="frame" x="189" y="601" width="225" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="qU2-1k-68d"/>
+                                    <constraint firstAttribute="height" constant="115" id="x2i-tA-Ees"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="DCr-Xh-maI" firstAttribute="trailing" secondItem="L1f-tg-UzK" secondAttribute="trailing" id="HLf-bx-Tcg"/>
-                            <constraint firstItem="DCr-Xh-maI" firstAttribute="leading" secondItem="Gj4-ek-5WA" secondAttribute="leading" constant="189" id="JlW-w7-2E3"/>
-                            <constraint firstItem="DCr-Xh-maI" firstAttribute="bottom" secondItem="Gj4-ek-5WA" secondAttribute="bottom" id="T46-H6-xFX"/>
-                            <constraint firstItem="DCr-Xh-maI" firstAttribute="top" secondItem="3Ou-qk-tVu" secondAttribute="top" constant="601" id="bkG-lR-fSs"/>
-                            <constraint firstItem="DCr-Xh-maI" firstAttribute="trailing" secondItem="Gj4-ek-5WA" secondAttribute="trailing" id="qVB-Aj-Ghu"/>
+                            <constraint firstItem="DCr-Xh-maI" firstAttribute="trailing" secondItem="Gj4-ek-5WA" secondAttribute="trailing" id="Wh3-IC-4eG"/>
+                            <constraint firstItem="DCr-Xh-maI" firstAttribute="bottom" secondItem="Gj4-ek-5WA" secondAttribute="bottom" id="hwf-Po-ANq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gj4-ek-5WA"/>
                     </view>
@@ -296,14 +295,16 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wA-P0-gPi" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
                                 <rect key="frame" x="189" y="601" width="225" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="Smg-I5-xsW"/>
+                                    <constraint firstAttribute="width" constant="225" id="vNd-IV-W7j"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="3wA-P0-gPi" firstAttribute="bottom" secondItem="anX-os-oPK" secondAttribute="bottom" id="Hls-7N-lrN"/>
-                            <constraint firstItem="3wA-P0-gPi" firstAttribute="trailing" secondItem="anX-os-oPK" secondAttribute="trailing" id="Wmg-zS-Ukm"/>
-                            <constraint firstItem="3wA-P0-gPi" firstAttribute="top" secondItem="8tn-lm-phA" secondAttribute="top" constant="601" id="tIS-Wm-8ia"/>
-                            <constraint firstItem="3wA-P0-gPi" firstAttribute="leading" secondItem="anX-os-oPK" secondAttribute="leading" constant="189" id="wdG-uN-OlO"/>
+                            <constraint firstItem="3wA-P0-gPi" firstAttribute="bottom" secondItem="anX-os-oPK" secondAttribute="bottom" id="7er-FM-mb6"/>
+                            <constraint firstItem="3wA-P0-gPi" firstAttribute="trailing" secondItem="anX-os-oPK" secondAttribute="trailing" id="LBg-bn-woL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="anX-os-oPK"/>
                     </view>
@@ -329,23 +330,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jyn-N1-p4T">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jyn-N1-p4T">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Stories" id="TmU-MW-nyQ"/>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAc-y6-jrG" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
                                 <rect key="frame" x="189" y="601" width="225" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="4v3-1G-upj"/>
+                                    <constraint firstAttribute="height" constant="115" id="lJS-MF-hxO"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="PAc-y6-jrG" firstAttribute="trailing" secondItem="usk-OC-GEa" secondAttribute="trailing" id="EGx-5O-CeZ"/>
-                            <constraint firstItem="PAc-y6-jrG" firstAttribute="leading" secondItem="usk-OC-GEa" secondAttribute="leading" constant="189" id="JMF-uv-Xji"/>
-                            <constraint firstItem="PAc-y6-jrG" firstAttribute="bottom" secondItem="usk-OC-GEa" secondAttribute="bottom" id="dAb-Of-1IR"/>
-                            <constraint firstItem="PAc-y6-jrG" firstAttribute="top" secondItem="fao-o7-aZ5" secondAttribute="top" constant="601" id="hh4-JU-4el"/>
-                            <constraint firstItem="PAc-y6-jrG" firstAttribute="trailing" secondItem="jyn-N1-p4T" secondAttribute="trailing" id="jec-RG-u7a"/>
+                            <constraint firstItem="PAc-y6-jrG" firstAttribute="trailing" secondItem="usk-OC-GEa" secondAttribute="trailing" id="00u-7P-2eu"/>
+                            <constraint firstItem="PAc-y6-jrG" firstAttribute="bottom" secondItem="usk-OC-GEa" secondAttribute="bottom" id="2eL-Ep-xIb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="usk-OC-GEa"/>
                     </view>
@@ -362,23 +365,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJC-al-Za3">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJC-al-Za3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Settings" id="zpL-zk-k5E"/>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4x-3O-iqW" customClass="LightDarkThemeView" customModule="Meme_Generator" customModuleProvider="target">
                                 <rect key="frame" x="189" y="601" width="225" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="9DQ-tq-pxA"/>
+                                    <constraint firstAttribute="width" constant="225" id="Ilw-AS-1yv"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="W4x-3O-iqW" firstAttribute="leading" secondItem="UyV-Bs-0mv" secondAttribute="leading" constant="189" id="Fd9-Zt-GlC"/>
-                            <constraint firstItem="W4x-3O-iqW" firstAttribute="trailing" secondItem="XJC-al-Za3" secondAttribute="trailing" id="SbL-W4-9SW"/>
-                            <constraint firstItem="W4x-3O-iqW" firstAttribute="trailing" secondItem="UyV-Bs-0mv" secondAttribute="trailing" id="UJr-jz-C8h"/>
-                            <constraint firstItem="W4x-3O-iqW" firstAttribute="top" secondItem="piW-6s-qHB" secondAttribute="top" constant="601" id="aLm-lG-t6e"/>
-                            <constraint firstItem="W4x-3O-iqW" firstAttribute="bottom" secondItem="UyV-Bs-0mv" secondAttribute="bottom" id="dkD-P7-tPw"/>
+                            <constraint firstItem="W4x-3O-iqW" firstAttribute="trailing" secondItem="UyV-Bs-0mv" secondAttribute="trailing" id="iH8-6n-LFV"/>
+                            <constraint firstItem="W4x-3O-iqW" firstAttribute="bottom" secondItem="UyV-Bs-0mv" secondAttribute="bottom" id="ne4-S0-CHH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UyV-Bs-0mv"/>
                     </view>
