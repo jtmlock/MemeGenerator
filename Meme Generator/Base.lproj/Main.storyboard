@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pepe" translatesAutoresizingMaskIntoConstraints="NO" id="GDJ-ty-pOQ">
-                                <rect key="frame" x="87" y="113" width="240" height="250.00000000000023"/>
+                                <rect key="frame" x="87" y="113" width="240" height="250"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqn-lJ-dyU">
                                 <rect key="frame" x="87" y="479" width="240" height="30"/>
@@ -108,6 +108,7 @@
                     </view>
                     <connections>
                         <outlet property="passwordField" destination="TaZ-Dv-cCE" id="1Kr-l1-EsT"/>
+                        <outlet property="reu_viewLightDarkTheme" destination="hGe-6q-99T" id="cxZ-qO-XgF"/>
                         <outlet property="usernameField" destination="Bqh-4r-deY" id="grH-5Z-FEf"/>
                         <segue destination="GR8-mr-Nzn" kind="presentation" identifier="loginSegue" id="Fdi-Hk-8QG"/>
                     </connections>
@@ -174,6 +175,9 @@
                             </switch>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="reu_viewLightDarkTheme" destination="qNY-SH-I6c" id="Q04-Kc-6He"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pz-aX-FNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,12 +240,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kol-dV-p3b" userLabel="photoImage">
-                                <rect key="frame" x="36" y="12" width="343" height="292"/>
+                                <rect key="frame" x="36" y="11" width="343" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UhN-xf-aPp" userLabel="photoCommentField">
-                                <rect key="frame" x="36" y="331" width="343" height="34"/>
+                                <rect key="frame" x="36" y="330" width="343" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -272,7 +276,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nyV-lr-wMF" userLabel="cameraImage">
-                                <rect key="frame" x="36" y="12" width="343" height="292"/>
+                                <rect key="frame" x="36" y="11" width="343" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>

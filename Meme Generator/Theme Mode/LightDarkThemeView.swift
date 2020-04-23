@@ -59,26 +59,67 @@ class LightDarkThemeView: UIView {
         
         if (sender.isOn) {
             UIState.setSystemThemeMode(darkmode: true)
+            //
+            remodalToggle()
             UIAnimation.animatedImages(imageview: self.moonImageView)
+            alterSystemViewBackground()
         } else {
             UIState.setSystemThemeMode(darkmode: false)
+            //
+            remodalToggle()
             UIAnimation.animatedImages(imageview: self.sunImageView)
+            alterSystemViewBackground()
         }
+    }
         
+    // @note: Function that updates the state of the UISwicth button base
+    // on the theme state.
+    public func updateLightDarkToggle() {
+        remodalToggle()
+        alterSystemViewBackground()
+    }
+    
+    // @note: Remodal the toggle apperance base on the mode selected
+    private func remodalToggle(){
+        let toggleState = UIState.hasDarkModeState()
+        
+        if (toggleState) {
+            ligthDark_toggle.isOn = toggleState
+            ligthDark_toggle.onTintColor = UIColor.systemGray6
+            ligthDark_toggle.thumbTintColor = UIColor.white
+            
+        } else {
+            ligthDark_toggle.isOn = toggleState
+            ligthDark_toggle.onTintColor = UIColor.systemGray6
+            ligthDark_toggle.thumbTintColor = UIColor.black
+        }
+    }
+    
+    // @note: This function alters the view and the view controller system background
+    private func alterSystemViewBackground() {
         // find the parent UIViewController
-        let parentController = findParentviewController(forView: self)
+        let parentController : UIViewController? = findParentviewController(forView: self)
         
         if parentController != nil {
             // for the parent UIViewController
-            UIState.overrideUserInterface(viewController: parentController!)
+
+        overrideUserInterface(viewController: parentController!)
             
             // also force the reusable view to use system backgroun
             self.view.backgroundColor = UIColor.systemBackground
         }
-        
-        // Always update the current UISwitch state base on
-        // theme state of the UIState class.
-        UIState.updateLightDarkToggle(toggleBtn: ligthDark_toggle)
+    }
+    // @note: Function that update the current passed view controller to
+    //          its intended mode base on the theme state.
+    //
+    // @param   viewController     The passed view controller that has to
+    //                              to change theme.
+    private func overrideUserInterface(viewController : UIViewController) {
+        if (UIState.hasDarkModeState()) {
+            viewController.overrideUserInterfaceStyle = .dark
+        } else {
+            viewController.overrideUserInterfaceStyle = .light
+        }
     }
     
     /*
@@ -100,6 +141,4 @@ class LightDarkThemeView: UIView {
 
         return nil
     }
-    
-    
 }

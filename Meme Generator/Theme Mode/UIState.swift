@@ -13,22 +13,6 @@ import UIKit        // related to UIcontrollers
 class UIState {
     static private var _inDarkMode : Bool = false   // the theme state of the screen
     
-    // @note: Function that updates the state of the UISwicth button base
-    // on the theme state.
-    //
-    // @param   toggleBtn   UISwitch controller.
-    static func updateLightDarkToggle(toggleBtn: UISwitch) {
-        if (_inDarkMode) {
-            toggleBtn.isOn = true
-            toggleBtn.onTintColor = UIColor.systemGray6
-            toggleBtn.thumbTintColor = UIColor.white
-        } else {
-            toggleBtn.isOn = false
-            toggleBtn.onTintColor = UIColor.systemGray6
-            toggleBtn.thumbTintColor = UIColor.black
-        }
-    }
-    
     // @note: Function update the theme state base one the passed boolean
     // value
     //
@@ -47,18 +31,5 @@ class UIState {
     // @return  true -> dark mode. false -> light mode.
     static func hasDarkModeState() -> Bool {
         return self._inDarkMode
-    }
-    
-    // @note: Function that update the current passed view controller to
-    //          its intended mode base on the theme state.
-    //
-    // @param   viewController     The passed view controller that has to
-    //                              to change theme.
-    static func overrideUserInterface(viewController : UIViewController) {
-        if (_inDarkMode) {
-            viewController.overrideUserInterfaceStyle = .dark
-        } else {
-            viewController.overrideUserInterfaceStyle = .light
-        }
     }
 }
