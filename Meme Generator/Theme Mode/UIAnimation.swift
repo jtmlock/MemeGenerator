@@ -51,3 +51,6 @@ class UIAnimation {
  src: https://developer.apple.com/documentation/uikit/uiview/1622451-animate
  src: https://developer.apple.com/documentation/uikit/uiview/1622552-animatekeyframes/
  */
+/*
+ src: https://stackoverflow.com/questions/43081055/best-way-to-execute-multiple-animations-synchronously/43081291
+ */
