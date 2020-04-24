@@ -48,6 +48,9 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 * Profile pages for each user
 * Settings (Accessibility, General, etc.)
 -Update Settings screen created
+-Persistant Log in 
+-User is able to switch between camera and album
+-User is able to logout
 
 ## User Story Update- 
 * Users are able to open camera from Mobile device of Photo library from simulator
