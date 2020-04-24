@@ -109,7 +109,7 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 ### Gif of Progress
 <img src="https://github.com/jtmlock/MemeGenerator/blob/master/MemeGeneratorWalkthrough1.gif"><br>
 
-### Gif of Progress showing switching between camera and Album with log out feather
+### Gif of Progress showing switching between camera and Album with log out feature
 <img src="https://github.com/jtmlock/MemeGenerator/blob/master/MemeSwitchingBetween12.gif"><br>
 
 ## Schema
