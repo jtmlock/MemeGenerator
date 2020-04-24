@@ -109,6 +109,9 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 ### Gif of Progress
 <img src="https://github.com/jtmlock/MemeGenerator/blob/master/MemeGeneratorWalkthrough1.gif"><br>
 
+### Gif of Progress showing switching between camera and Album with log out feather
+<img src="https://github.com/jtmlock/MemeGenerator><br>
+
 ## Schema
 
 ##  Meme Generator - Schema Design
