@@ -63,7 +63,11 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="tRN-6g-eTG" appends="YES" id="pA4-Ts-5Vv"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="zqE-eu-biW"/>
                     <connections>
@@ -73,6 +77,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tRN-6g-eTG">
+                    <connections>
+                        <action selector="tapAnywhere:" destination="BYZ-38-t0r" id="WlW-qT-uu3"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="119.0217391304348"/>
         </scene>
@@ -246,9 +255,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="albumCommentField:" destination="p0A-YJ-lOp" eventType="editingDidEnd" id="szV-uT-TRK"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvn-ew-eLq" userLabel="photoSubmit">
                                 <rect key="frame" x="36" y="438" width="345" height="30"/>
@@ -284,6 +290,7 @@
                         <viewLayoutGuide key="safeArea" id="xBM-mh-B80"/>
                     </view>
                     <connections>
+                        <outlet property="albumCommentField" destination="UhN-xf-aPp" id="j9L-xB-AJm"/>
                         <outlet property="albumView" destination="kol-dV-p3b" id="9Jh-k7-Orz"/>
                     </connections>
                 </viewController>
@@ -439,8 +446,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3O3-od-RkS"/>
-        <segue reference="841-CD-PN5"/>
+        <segue reference="gaL-dI-Cze"/>
+        <segue reference="vqI-Qf-BbI"/>
         <segue reference="54p-Tx-0aS"/>
         <segue reference="pP5-cX-zI1"/>
         <segue reference="IAR-6W-8ol"/>

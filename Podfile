@@ -7,7 +7,7 @@ target 'Meme Generator' do
 
   # Pods for Meme Generator
   pod "Parse"
-  pod "AlamofireImage"
+  pod "AlamofireImage", "~>4.1"
 
   target 'Meme GeneratorTests' do
     inherit! :search_paths

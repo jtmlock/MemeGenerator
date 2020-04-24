@@ -63,6 +63,11 @@ class LoginViewController: UIViewController {
         
     }
     
+    @IBAction func tapAnywhere(_ sender: Any) {
+        self.view.endEditing(true)
+        
+        
+    }
     /*
     // MARK: - Navigation
 
