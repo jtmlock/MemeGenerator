@@ -57,6 +57,11 @@ Uses pictures and text, to display and/ or create Memes. The User will be able t
 
 <img src="https://github.com/jtmlock/MemeGenerator/blob/master/MemeGeneratorWalkthrough2.gif"><br>
 
+## User Story Upate- 
+* Users are able to load images through parse server, with comments and scroll through them
+
+<img src="https://github.com/jtmlock/MemeGenerator/blob/master/MemeImagesLoadedToHeroku.gif"><br>
+
 **Optional Nice-to-have Stories**
 
 *  Able to search for friends
