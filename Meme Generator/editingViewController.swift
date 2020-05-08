@@ -38,8 +38,6 @@ class editingViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         
-        
-        
         let user = catchPost["author"] as! PFUser
         //editingTextField.text = user.username
         print(user.username!)
@@ -50,10 +48,6 @@ class editingViewController: UIViewController, UITableViewDelegate, UITableViewD
         print("user = " + user.username!)
         print("url = " + urlString)
         
-        
-        
-        
-
         // Do any additional setup after loading the view.
     }
     
