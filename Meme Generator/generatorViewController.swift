@@ -16,6 +16,9 @@ class generatorViewController: UIViewController, UITableViewDelegate, UITableVie
     
     var posts = [PFObject]()
     
+    var selectedPost = PFObject(className: "Posts")
+    var selectedCell: UITableViewCell!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +55,11 @@ class generatorViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
         
+        selectedCell = cell
+        
         let post = posts[indexPath.row]
+        selectedPost = post
+        //print("object is " + String(describing: type(of: post)))
         
         let user = post["author"] as! PFUser
         cell.usernameLabel.text = user.username
@@ -70,6 +77,15 @@ class generatorViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBAction func onBackFromGeneratorToHome(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //if let destination = seque.destination as? UIViewController
+        if segue.destination is editingViewController {
+            let vc = segue.destination as! editingViewController
+            vc.catchPost = selectedPost
+            vc.catchCell = selectedCell
+        }
     }
     
     /*

@@ -7,13 +7,49 @@
 //
 
 import UIKit
+import Parse
+import Alamofire
+import AlamofireImage
 
-class editingViewController: UIViewController {
-
-    @IBOutlet weak var editingTextField: UITextField!
-    @IBOutlet weak var editingPhotoView: UIImageView!
+class editingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var catchPost: PFObject!
+    var catchCell: UITableViewCell!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+        let cell = catchCell
+        
+        return cell!
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
+        
+        let user = catchPost["author"] as! PFUser
+        //editingTextField.text = user.username
+        print(user.username!)
+        let imageFile = catchPost["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)
+        
+        print("user = " + user.username!)
+        print("url = " + urlString)
+        
         
         
         
