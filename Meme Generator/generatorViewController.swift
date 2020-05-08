@@ -17,8 +17,6 @@ class generatorViewController: UIViewController, UITableViewDelegate, UITableVie
     var posts = [PFObject]()
     
     var selectedPost = PFObject(className: "Posts")
-    var selectedCell: UITableViewCell!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,8 +53,6 @@ class generatorViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
         
-        selectedCell = cell
-        
         let post = posts[indexPath.row]
         selectedPost = post
         //print("object is " + String(describing: type(of: post)))
@@ -70,7 +66,9 @@ class generatorViewController: UIViewController, UITableViewDelegate, UITableVie
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         
-        cell.photoView.af_setImage(withURL: url)
+        cell.photoView.af.setImage(withURL: url)
+        
+        //cell.photoView.af_setImage(withURL: url)
         
         return cell
     }
@@ -84,7 +82,6 @@ class generatorViewController: UIViewController, UITableViewDelegate, UITableVie
         if segue.destination is editingViewController {
             let vc = segue.destination as! editingViewController
             vc.catchPost = selectedPost
-            vc.catchCell = selectedCell
         }
     }
     

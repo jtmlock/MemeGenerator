@@ -11,42 +11,28 @@ import Parse
 import Alamofire
 import AlamofireImage
 
-class editingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class editingViewController: UIViewController {
     
     var catchPost: PFObject!
-    var catchCell: UITableViewCell!
     
-    @IBOutlet weak var tableView: UITableView!
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
-        let cell = catchCell
-        
-        return cell!
-    }
-    
-    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var editorText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        let user = catchPost["author"] as! PFUser
+        //let user = catchPost["author"] as! PFUser
+        editorText.text = catchPost["caption"] as? String
         //editingTextField.text = user.username
-        print(user.username!)
+        //print(user.username!)
         let imageFile = catchPost["image"] as! PFFileObject
         let urlString = imageFile.url!
-        let url = URL(string: urlString)
+        let url = URL(string: urlString)!
         
-        print("user = " + user.username!)
-        print("url = " + urlString)
+        imageView.af.setImage(withURL: url)
+        
+        //print("user = " + user.username!)
+        //print("url = " + urlString)
         
         // Do any additional setup after loading the view.
     }
