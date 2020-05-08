@@ -12,6 +12,7 @@
 		040A7CBF244F515000704161 /* generatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7CBE244F515000704161 /* generatorViewController.swift */; };
 		040A7CC1244F789A00704161 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7CC0244F789A00704161 /* PostCell.swift */; };
 		040DB97424494E94008D458C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DB97324494E94008D458C /* CameraViewController.swift */; };
+		041BAD6824654BD200864752 /* editingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD6724654BD200864752 /* editingViewController.swift */; };
 		043940C5244000AB0000E494 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C4244000AB0000E494 /* LoginViewController.swift */; };
 		043940C92440066B0000E494 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C82440066A0000E494 /* FeedViewController.swift */; };
 		04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84A8E2424757E00771B5A /* AppDelegate.swift */; };
@@ -22,7 +23,6 @@
 		04C84AA62424758300771B5A /* Meme_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84AA52424758300771B5A /* Meme_GeneratorTests.swift */; };
 		04C84AB12424758300771B5A /* Meme_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84AB02424758300771B5A /* Meme_GeneratorUITests.swift */; };
 		04E3EDB9246502F1001D3D77 /* GeneratorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3EDB8246502F1001D3D77 /* GeneratorCollectionViewController.swift */; };
-		04E3EDBB24650D4F001D3D77 /* EditingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3EDBA24650D4F001D3D77 /* EditingCollectionViewController.swift */; };
 		51691AFED67D19E9A16D295B /* Pods_Meme_GeneratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FAA4AADE6CEBE3059D9740 /* Pods_Meme_GeneratorTests.framework */; };
 		DCC73E0999F88BBA1C14985E /* Pods_Meme_Generator_Meme_GeneratorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936BE388589458A6D01C67B4 /* Pods_Meme_Generator_Meme_GeneratorUITests.framework */; };
 		ED3E66E619199CEB77817C3C /* Pods_Meme_Generator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6302A846ED9B06487BA5A4FD /* Pods_Meme_Generator.framework */; };
@@ -51,6 +51,7 @@
 		040A7CBE244F515000704161 /* generatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generatorViewController.swift; sourceTree = "<group>"; };
 		040A7CC0244F789A00704161 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		040DB97324494E94008D458C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		041BAD6724654BD200864752 /* editingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editingViewController.swift; sourceTree = "<group>"; };
 		043940C4244000AB0000E494 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		043940C82440066A0000E494 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		04C84A8B2424757E00771B5A /* Meme Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meme Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +68,6 @@
 		04C84AB02424758300771B5A /* Meme_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme_GeneratorUITests.swift; sourceTree = "<group>"; };
 		04C84AB22424758300771B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E3EDB8246502F1001D3D77 /* GeneratorCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorCollectionViewController.swift; sourceTree = "<group>"; };
-		04E3EDBA24650D4F001D3D77 /* EditingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingCollectionViewController.swift; sourceTree = "<group>"; };
 		2D995C99801B7F5433D099E7 /* Pods-Meme Generator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meme Generator.debug.xcconfig"; path = "Target Support Files/Pods-Meme Generator/Pods-Meme Generator.debug.xcconfig"; sourceTree = "<group>"; };
 		2DA5A11F8DB8A6DB4C5AA0CF /* Pods-Meme GeneratorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meme GeneratorTests.release.xcconfig"; path = "Target Support Files/Pods-Meme GeneratorTests/Pods-Meme GeneratorTests.release.xcconfig"; sourceTree = "<group>"; };
 		4072A1FDE121ED736A6ABC8D /* Pods-Meme Generator-Meme GeneratorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meme Generator-Meme GeneratorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Meme Generator-Meme GeneratorUITests/Pods-Meme Generator-Meme GeneratorUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				04C84A8E2424757E00771B5A /* AppDelegate.swift */,
 				04C84A902424757E00771B5A /* SceneDelegate.swift */,
 				04C84A942424757E00771B5A /* Main.storyboard */,
-				04E3EDBA24650D4F001D3D77 /* EditingCollectionViewController.swift */,
+				041BAD6724654BD200864752 /* editingViewController.swift */,
 				04E3EDB8246502F1001D3D77 /* GeneratorCollectionViewController.swift */,
 				040A7CBE244F515000704161 /* generatorViewController.swift */,
 				040A7CBC244EAA0500704161 /* SettingsViewController.swift */,
@@ -432,13 +432,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				040A7CBB244C4AFD00704161 /* AlbumViewController.swift in Sources */,
+				041BAD6824654BD200864752 /* editingViewController.swift in Sources */,
 				04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */,
 				040A7CBD244EAA0500704161 /* SettingsViewController.swift in Sources */,
 				040DB97424494E94008D458C /* CameraViewController.swift in Sources */,
 				04E3EDB9246502F1001D3D77 /* GeneratorCollectionViewController.swift in Sources */,
 				043940C5244000AB0000E494 /* LoginViewController.swift in Sources */,
 				040A7CC1244F789A00704161 /* PostCell.swift in Sources */,
-				04E3EDBB24650D4F001D3D77 /* EditingCollectionViewController.swift in Sources */,
 				043940C92440066B0000E494 /* FeedViewController.swift in Sources */,
 				040A7CBF244F515000704161 /* generatorViewController.swift in Sources */,
 				04C84A912424757E00771B5A /* SceneDelegate.swift in Sources */,

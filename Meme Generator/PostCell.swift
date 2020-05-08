@@ -16,6 +16,9 @@ class PostCell: UITableViewCell {
     
     @IBOutlet weak var captionLabel: UILabel!
     
+    @IBOutlet weak var photoButton: UIButton!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
