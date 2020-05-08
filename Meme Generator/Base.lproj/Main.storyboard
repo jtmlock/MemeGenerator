@@ -369,7 +369,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3428.985507246377" y="-698.64130434782612"/>
+            <point key="canvasLocation" x="3538" y="-652"/>
         </scene>
         <!--Stories-->
         <scene sceneID="Bdw-So-z74">
@@ -448,7 +448,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="gaL-dI-Cze"/>
         <segue reference="vqI-Qf-BbI"/>
-        <segue reference="54p-Tx-0aS"/>
+        <segue reference="3Wd-qR-R0P"/>
         <segue reference="pP5-cX-zI1"/>
         <segue reference="IAR-6W-8ol"/>
     </inferredMetricsTieBreakers>
