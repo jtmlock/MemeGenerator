@@ -17,6 +17,9 @@ class editingViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var editorText: UITextField!
+    @IBOutlet weak var upperLabelField: UILabel!
+    @IBOutlet weak var lowerLabelField: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
