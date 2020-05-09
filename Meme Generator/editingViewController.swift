@@ -10,6 +10,7 @@ import UIKit
 import Parse
 import Alamofire
 import AlamofireImage
+import TinyConstraints
 
 class editingViewController: UIViewController {
     
@@ -84,11 +85,14 @@ class editingViewController: UIViewController {
         let imageWithText = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
+        
         return imageWithText
         
         
         
     }
+    
+    
 
     /*
     // MARK: - Navigation
