@@ -7,10 +7,12 @@ PODS:
     - Parse/Core (= 1.17.3)
   - Parse/Core (1.17.3):
     - Bolts/Tasks (~> 1.9)
+  - TinyConstraints (4.0.1)
 
 DEPENDENCIES:
   - AlamofireImage (~> 4.1)
   - Parse
+  - TinyConstraints
 
 SPEC REPOS:
   trunk:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - AlamofireImage
     - Bolts
     - Parse
+    - TinyConstraints
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Parse: c1ad2a04d2cab2b54b6fb7da05f741abf2cf57d1
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: eaf67763bdfe553f7db9c666ab3a352c9086ef32
+PODFILE CHECKSUM: dd07fa16356862e76cf6ee12fa18a468fd2cf790
 
 COCOAPODS: 1.8.4

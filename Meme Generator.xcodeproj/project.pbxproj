@@ -15,6 +15,11 @@
 		041BAD6824654BD200864752 /* editingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD6724654BD200864752 /* editingViewController.swift */; };
 		043940C5244000AB0000E494 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C4244000AB0000E494 /* LoginViewController.swift */; };
 		043940C92440066B0000E494 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043940C82440066A0000E494 /* FeedViewController.swift */; };
+		04A82913246716860051D102 /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A82912246716860051D102 /* ViewViewController.swift */; };
+		04A8291B246719190051D102 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A8291A246719190051D102 /* Media.xcassets */; };
+		04A8291D246719190051D102 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8291C246719190051D102 /* ActionViewController.swift */; };
+		04A82920246719190051D102 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A8291E246719190051D102 /* MainInterface.storyboard */; };
+		04A82924246719190051D102 /* Extensions.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04A82918246719190051D102 /* Extensions.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		04C84A8F2424757E00771B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84A8E2424757E00771B5A /* AppDelegate.swift */; };
 		04C84A912424757E00771B5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C84A902424757E00771B5A /* SceneDelegate.swift */; };
 		04C84A962424757E00771B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C84A942424757E00771B5A /* Main.storyboard */; };
@@ -29,6 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		04A82922246719190051D102 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C84A832424757E00771B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04A82917246719190051D102;
+			remoteInfo = Extensions;
+		};
 		04C84AA22424758300771B5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04C84A832424757E00771B5A /* Project object */;
@@ -45,6 +57,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		04A82928246719190051D102 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04A82924246719190051D102 /* Extensions.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		040A7CBA244C4AFD00704161 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		040A7CBC244EAA0500704161 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +80,12 @@
 		041BAD6724654BD200864752 /* editingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editingViewController.swift; sourceTree = "<group>"; };
 		043940C4244000AB0000E494 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		043940C82440066A0000E494 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		04A82912246716860051D102 /* ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewViewController.swift; path = ../ViewViewController.swift; sourceTree = "<group>"; };
+		04A82918246719190051D102 /* Extensions.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extensions.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A8291A246719190051D102 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		04A8291C246719190051D102 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		04A8291F246719190051D102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		04A82921246719190051D102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C84A8B2424757E00771B5A /* Meme Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meme Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C84A8E2424757E00771B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C84A902424757E00771B5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +112,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		04A82915246719190051D102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04C84A882424757E00771B5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,12 +146,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A82919246719190051D102 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04A8291A246719190051D102 /* Media.xcassets */,
+				04A8291C246719190051D102 /* ActionViewController.swift */,
+				04A8291E246719190051D102 /* MainInterface.storyboard */,
+				04A82921246719190051D102 /* Info.plist */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		04C84A822424757E00771B5A = {
 			isa = PBXGroup;
 			children = (
 				04C84A8D2424757E00771B5A /* Meme Generator */,
 				04C84AA42424758300771B5A /* Meme GeneratorTests */,
 				04C84AAF2424758300771B5A /* Meme GeneratorUITests */,
+				04A82919246719190051D102 /* Extensions */,
 				04C84A8C2424757E00771B5A /* Products */,
 				A580BCAA1E115758D04721B1 /* Pods */,
 				6784222F7CA23C976BDED723 /* Frameworks */,
@@ -125,6 +176,7 @@
 				04C84A8B2424757E00771B5A /* Meme Generator.app */,
 				04C84AA12424758300771B5A /* Meme GeneratorTests.xctest */,
 				04C84AAC2424758300771B5A /* Meme GeneratorUITests.xctest */,
+				04A82918246719190051D102 /* Extensions.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +199,7 @@
 				04C84A992424758300771B5A /* LaunchScreen.storyboard */,
 				04C84A9C2424758300771B5A /* Info.plist */,
 				040A7CC0244F789A00704161 /* PostCell.swift */,
+				04A82912246716860051D102 /* ViewViewController.swift */,
 			);
 			path = "Meme Generator";
 			sourceTree = "<group>";
@@ -195,6 +248,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		04A82917246719190051D102 /* Extensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A82925246719190051D102 /* Build configuration list for PBXNativeTarget "Extensions" */;
+			buildPhases = (
+				04A82914246719190051D102 /* Sources */,
+				04A82915246719190051D102 /* Frameworks */,
+				04A82916246719190051D102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extensions;
+			productName = Extensions;
+			productReference = 04A82918246719190051D102 /* Extensions.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		04C84A8A2424757E00771B5A /* Meme Generator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C84AB52424758300771B5A /* Build configuration list for PBXNativeTarget "Meme Generator" */;
@@ -204,10 +274,12 @@
 				04C84A882424757E00771B5A /* Frameworks */,
 				04C84A892424757E00771B5A /* Resources */,
 				945F868F76D0B6A5857426C0 /* [CP] Embed Pods Frameworks */,
+				04A82928246719190051D102 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				04A82923246719190051D102 /* PBXTargetDependency */,
 			);
 			name = "Meme Generator";
 			productName = "Meme Generator";
@@ -259,10 +331,13 @@
 		04C84A832424757E00771B5A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Mac;
 				TargetAttributes = {
+					04A82917246719190051D102 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 					04C84A8A2424757E00771B5A = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -292,11 +367,21 @@
 				04C84A8A2424757E00771B5A /* Meme Generator */,
 				04C84AA02424758300771B5A /* Meme GeneratorTests */,
 				04C84AAB2424758300771B5A /* Meme GeneratorUITests */,
+				04A82917246719190051D102 /* Extensions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		04A82916246719190051D102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A8291B246719190051D102 /* Media.xcassets in Resources */,
+				04A82920246719190051D102 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04C84A892424757E00771B5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,6 +512,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04A82914246719190051D102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A8291D246719190051D102 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04C84A872424757E00771B5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +533,7 @@
 				043940C5244000AB0000E494 /* LoginViewController.swift in Sources */,
 				040A7CC1244F789A00704161 /* PostCell.swift in Sources */,
 				043940C92440066B0000E494 /* FeedViewController.swift in Sources */,
+				04A82913246716860051D102 /* ViewViewController.swift in Sources */,
 				040A7CBF244F515000704161 /* generatorViewController.swift in Sources */,
 				04C84A912424757E00771B5A /* SceneDelegate.swift in Sources */,
 			);
@@ -464,6 +558,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		04A82923246719190051D102 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04A82917246719190051D102 /* Extensions */;
+			targetProxy = 04A82922246719190051D102 /* PBXContainerItemProxy */;
+		};
 		04C84AA32424758300771B5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04C84A8A2424757E00771B5A /* Meme Generator */;
@@ -477,6 +576,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		04A8291E246719190051D102 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A8291F246719190051D102 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		04C84A942424757E00771B5A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -496,6 +603,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		04A82926246719190051D102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VCNJMVW4H;
+				INFOPLIST_FILE = Extensions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.Flix.Meme-Generator.Extensions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04A82927246719190051D102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VCNJMVW4H;
+				INFOPLIST_FILE = Extensions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.Flix.Meme-Generator.Extensions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		04C84AB32424758300771B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -614,6 +761,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2D995C99801B7F5433D099E7 /* Pods-Meme Generator.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VCNJMVW4H;
@@ -633,6 +781,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5C91E5D594E0EFA2B7B92EE /* Pods-Meme Generator.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VCNJMVW4H;
@@ -735,6 +884,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04A82925246719190051D102 /* Build configuration list for PBXNativeTarget "Extensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A82926246719190051D102 /* Debug */,
+				04A82927246719190051D102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		04C84A862424757E00771B5A /* Build configuration list for PBXProject "Meme Generator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
