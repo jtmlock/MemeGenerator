@@ -99,7 +99,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
-                                    <segue destination="Tdj-45-p7T" kind="presentation" id="sC2-ZF-JxH"/>
+                                    <segue destination="Tdj-45-p7T" kind="presentation" modalPresentationStyle="fullScreen" id="sC2-ZF-JxH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7M-pZ-RIo">
@@ -117,7 +117,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Stories"/>
                                 <connections>
-                                    <segue destination="1Fr-0c-nIK" kind="presentation" id="Mhs-ZU-kWU"/>
+                                    <segue destination="1Fr-0c-nIK" kind="presentation" modalPresentationStyle="fullScreen" id="Mhs-ZU-kWU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -389,7 +389,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="443" id="UlM-PM-a32" customClass="PostCell" customModule="Meme_Generator" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="443"/>
+                                <rect key="frame" x="0.0" y="80" width="414" height="443"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UlM-PM-a32" id="QG2-p1-vBq">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="443"/>
@@ -408,6 +408,24 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5SS-m2-Yba">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Editor" id="k40-Ms-g8u">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="dNl-CT-PoC">
+                                            <connections>
+                                                <segue destination="f4W-Rs-3vy" kind="presentation" modalPresentationStyle="fullScreen" id="Eva-pn-VET"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Memes" id="Hbb-zJ-w9m">
+                                            <connections>
+                                                <segue destination="1Fr-0c-nIK" kind="presentation" modalPresentationStyle="fullScreen" id="Tue-NR-JNW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="NdY-XJ-i3G"/>
@@ -426,14 +444,20 @@
             <objects>
                 <viewController title="Stories" id="1Fr-0c-nIK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fao-o7-aZ5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jyn-N1-p4T">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Stories" id="TmU-MW-nyQ"/>
+                                    <navigationItem title="Stories" id="TmU-MW-nyQ">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="X78-3L-qAT">
+                                            <connections>
+                                                <segue destination="VeO-uN-wXo" kind="presentation" modalPresentationStyle="fullScreen" id="WAO-BQ-8bu"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -450,7 +474,7 @@
             <objects>
                 <viewController title="Settings" id="Tdj-45-p7T" customClass="SettingsViewController" customModule="Meme_Generator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="piW-6s-qHB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJC-al-Za3">
@@ -458,7 +482,12 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Settings" id="zpL-zk-k5E">
-                                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="mRr-EP-zrJ">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="hBx-AE-8xw">
+                                            <connections>
+                                                <segue destination="VeO-uN-wXo" kind="presentation" modalPresentationStyle="fullScreen" id="5C1-sJ-7Ve"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="mRr-EP-zrJ">
                                             <connections>
                                                 <action selector="onSignOut:" destination="Tdj-45-p7T" id="wUt-eG-uqg"/>
                                                 <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="gBw-ig-QlT"/>
@@ -496,9 +525,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Tue-NR-JNW"/>
         <segue reference="3O3-od-RkS"/>
         <segue reference="841-CD-PN5"/>
-        <segue reference="54p-Tx-0aS"/>
+        <segue reference="Eva-pn-VET"/>
         <segue reference="pP5-cX-zI1"/>
         <segue reference="gBw-ig-QlT"/>
     </inferredMetricsTieBreakers>
