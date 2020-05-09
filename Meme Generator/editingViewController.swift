@@ -64,6 +64,31 @@ class editingViewController: UIViewController {
             return newImage!
         }
     }
+    
+    func generateImageWithText(text:String) -> UIImage?{
+        let image = UIImage(named: "imageWithoutText")
+        
+        let imageView = UIImageView(image: image)
+        imageView.backgroundColor = UIColor.clear
+        imageView.frame = CGRect(x: 0, y: 0, width: image!.size.width, height: image!.size.height)
+        
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: image!.size.width, height: image!.size.height))
+        label.backgroundColor = UIColor.clear
+        label.textAlignment = .center
+        label.textColor = UIColor.white
+        label.text = text
+        
+        UIGraphicsBeginImageContextWithOptions(label.bounds.size, false, 0)
+        imageView.layer.render(in: UIGraphicsGetImageFromCurrentImageContext()! as! CGContext)
+        label.layer.render(in: UIGraphicsGetImageFromCurrentImageContext()! as! CGContext)
+        let imageWithText = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return imageWithText
+        
+        
+        
+    }
 
     /*
     // MARK: - Navigation
