@@ -1,5 +1,7 @@
 # MemeGenerator
 
+Video walkthrough of working parts: https://www.youtube.com/watch?v=VUkteWFkY00&feature=youtu.be
+
 CSN iOS 238 Spring Profe
 
 MEME GENERATION
